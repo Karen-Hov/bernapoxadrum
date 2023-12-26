@@ -1,0 +1,360 @@
+.flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.reception_dashboard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.item_dashboard{
+    padding:5.5rem 1rem ;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+.image_size{
+    width: 100px;
+    height: 100px;
+}
+#nkar{
+    margin-top: 20px;
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.img-responsive{
+    width: 100px;
+    height: 100px;
+}
+/*.imgDelete{*/
+/*    position: absolute;*/
+/*    top: 0px;*/
+/*    left: 81px;*/
+/*}*/
+.delimg{
+    top: -47px;
+    left: -30px;
+    position: relative;
+}
+.fas.fa-plane-departure.fa-2x {
+    color: #07555e !important;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.layout-fixed .brand-link {
+    width: 250px;
+    height: 60px !important;
+}
+.item_dashboard {
+    padding: 3.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    margin-top: 50px;
+}
+.bg-gradient-primary.btn:hover {
+    border-color: transparent;
+    color: #ececec;
+}
+.card .btn-sm {
+
+    margin-top: 20px;
+}
+.card {
+
+    padding: 20px;
+}
+.items.hotel .item .secondPart .startingPrice {
+    color: #07555e !important;
+    font-size: 40px !important;
+    line-height: 30px;
+    font-weight: bold;
+}
+.toursPage .datapicker label input {
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    font-family: SegoeUISemiBold;
+    font-size: 20px;
+    color: #001F21;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 15px !important;
+}
+.toursPage .filters .dropdown2 , .toursPage .datapicker {
+    width: 30%;
+    padding: 0px 20px;
+    font-size: 12px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.toursPage .datapicker label input {
+
+    font-size: 12px !important;
+}
+ .secondPart button {
+     background: #07555e;
+     color: white;
+     margin: 1px;
+     height: 31px;
+     border: none;
+     width: 170px;
+}
+ .toursPage div.title   {
+   display: none;
+}
+nav ul li {
+    font-size: 12px;}
+.book_now ,.hotel .secondPart .bookNow
+{
+    width: 170px;
+    font-size: 15px;
+    height:31px;
+}
+.toursCarousel .owl-carousel .owlItemContent .info, .toursPage .owlItemContent .info {
+    padding: 20px;
+    text-align: center;
+    height: max-content;
+}
+.addfeedbackModal input[type='radio']{
+    width: max-content;
+    height: max-content;
+}
+.form-group.clearfix .d-inline   input[type='number'] {
+    width: 100%;
+    max-width: 120px;
+}
+.form-group.clearfix .d-inline {
+    display: inline!important;
+    width: 100%;
+}
+.form-group.clearfix {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;}
+.toursPage .filters .dropdown2, .toursPage .datapicker {
+
+    margin: 5px;
+}
+.card-header p span {
+    font-weight: 100;
+    font-size: 20px;
+}
+.card-header p {
+    background:#07555e;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 18px;
+    font-width: bold;
+}
+.card-body.p-0>p {
+    font-size: 15px;
+}
+.card-body.p-0 h1 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+.card-body.p-0 h3{
+    font-size: 20px;
+}
+.card-body.p-0 div {
+    order: 2;
+}
+.card-body.p-0 a{
+    order: 1;
+    margin-bottom: 20px;
+}
+.card-body.p-0 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card-header {
+    /*display: none;*/
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin-left: 0;
+    line-height: 1;
+    font-size: 15px;
+    color: #07555E;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.btn-info {
+    color: #fff;
+    background-color: #07555e;
+    border-color: #07555e;
+    box-shadow: none;
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: #07555eeb;
+    border-color: #117a8b;
+}
+.data_add img {
+    max-width: 50px;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.loginlaravel {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.loginlaravel input{
+    padding: 5px;
+    border: 1px solid #0b2e13;
+    border-radius: 3px;
+    width: 200px;
+}
+
+.brand-link .brand-image.elevation-3 {
+    width: 180px;
+    max-height: 45px!important;
+    opacity: .8;
+    border-radius: 0;
+    margin-left: 31px;
+    box-shadow: none !important;
+}
+.layout-fixed .main-sidebar.show{
+    display: flex;
+    width: 100%;
+    left: 0;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    right: 0;
+}
+.showInHiddenSidebar button {
+    font-size: 22px;
+    background: transparent;
+    border: none;
+}
+.main-header.navbar {
+    height: 60px;
+}
+.d-none {
+    display: block !important;
+}
+.layout-fixed .wrapper .sidebar {
+    width: 100%;
+}
+.showInHiddenSidebar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 11111;
+    padding: 16px;
+}
+.controls input[type="date"] {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+.controls textarea {
+    margin-bottom: 0px;
+    height: 160px;
+    width: 100%;
+    border-radius: 3px;
+    resize: none;
+    margin-top: 10px;
+}
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:focus, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:hover {
+    background-color: rgb(7, 85, 94);
+    color: white;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #07555e;
+    border-color: transparent;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+    top: 12px;
+    left: 4px;
+    height: 14px;
+    width: 14px;
+    display: block;
+    position: absolute;
+    color: white;
+    border: 2px solid white;
+    border-radius: 14px;
+    box-shadow: 0 0 3px #444;
+    box-sizing: content-box;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 14px;
+    content: '+';
+    background-color: #07555e;
+}
+.bg-gradient-primary.btn.active, .bg-gradient-primary.btn:active, .bg-gradient-primary.btn:not(:disabled):not(.disabled).active, .bg-gradient-primary.btn:not(:disabled):not(.disabled):active {
+    background: #022d34 linear-gradient(180deg,#04424a,#06515a) repeat-x!important;
+    border-color: #04474f;
+}
+.fa-edit:before {
+    content: "\f044";
+    color: #07555e;
+}
+.nav-icon.fas.fa-edit:before{
+    content: "\f044";
+    color: #c2c7d0;
+}
+.fa-trash-alt:before {
+    content: "\f2ed";
+    color: red;
+}
+input[type='checkbox'], input[type='radio'] {
+    filter: grayscale(1);
+}
+.breadcrumb-item.active {
+    color: #07555E;
+}
+.breadcrumb-item a {
+    color: #000000;
+}
+.valid-error, .valid_error{
+    color: red;
+}
+
+    body   .content-wrapper, body  .main-footer, body .main-header {
+        transition: margin-left .3s ease-in-out;
+        padding-left: 250px !important;
+        margin-left: 0 !important;
+    }
+
+@media screen and (max-width: 768px) {
+    .toursPage .items .item {
+        width: 80%;
+        margin: 20px 0;
+
+    }
+    .toursPage .items {
+
+        justify-content: center;
+    }
+    body  .content-wrapper, body  .main-footer, body  .main-header {
+        transition: margin-left .3s ease-in-out;
+        padding-left: 0px !important;
+        margin-left: 0 !important;
+    }
+}

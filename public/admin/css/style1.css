@@ -1,0 +1,2890 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav-tabs .nav-link.error {
+    color: red;
+}
+
+@font-face {
+    font-family: SegoeUIRegular;
+    src:url(../fonts/Montserratarm-Regular.otf);
+}
+@font-face {
+    font-family: montseratNotArmReg;
+    src:url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: SegoeUISemiBold;
+    src:url(../fonts/Montserratarm-Regular.otf);
+}
+@font-face {
+    font-family: SegoeUIBold;
+    src:url(../fonts/Montserratarm-Bold.otf);
+}
+@font-face {
+    font-family: montseratBold;
+    src:url(../fonts/Montserratarm-Bold.otf);
+}
+body {
+    font-family: SegoeUIRegular ;
+    overflow-x: hidden;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+h1, h2 {
+    font-weight: normal;
+}
+*{
+    box-sizing: border-box;
+    font-family: inherit;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+input , button , textarea {
+    outline: none !important;
+    resize: none;
+}
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.myContainer {
+    width: 90%;
+    max-width: 1630px;
+    margin: 0 auto;
+}
+
+.sction1 header {
+    position: relative;
+}
+.sction1 header .myContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+a.montserat {
+
+    font-weight: 600;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+.owl-carousel .owl-nav button.owl-prev , .owl-carousel .owl-nav button.owl-next{
+    border-radius: 50%;
+    position: absolute;
+    left: -70px;
+    top: 55%;
+    width: 40px;
+    height: 40px;
+    background: #DBDBDB;
+    font-size: 40px;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.owl-carousel .owl-nav button.owl-prev span , .owl-carousel .owl-nav button.owl-next span{
+    width: max-content;
+    height: max-content;
+    line-height: 30px;
+    display: block;
+    padding-bottom: 6px;
+}
+.owl-carousel .owl-nav button.owl-next{
+    border-radius: 50%;
+    position: absolute;
+    left: inherit;
+    right: -70px;
+    top: 55%;
+    width: 40px;
+    height: 40px;
+    background: #DBDBDB;
+    font-size: 40px;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #0568a7;
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+}
+.sction1 {
+    position: relative;
+    height: 850px;
+    background-image: url(../img/homeback..png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fas.fa-phone{
+    transform: rotate(90deg);
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+nav ul {
+    z-index: 1;
+    padding: 5px;
+    width: max-content;
+
+
+}
+nav ul li.active {
+    color: white;
+}
+nav ul li{
+    font-size: 18px;
+    line-height: 20px;
+    color: #D5B36A;
+    font-family: SegoeUIBold ;
+}
+.logo button.hideInWeb {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.mobileMenu {
+    display: none;
+}
+.logo button.hideInWeb img{
+    width: 40px;
+}
+nav .background {
+    background: rgba(4, 86, 97, 0.6);
+    height: 41px;
+    width: 48%;
+    position: absolute;
+    right: 0;
+    display: none;
+    bottom: -5px;
+    z-index: 0;
+    min-width: 950px;
+}
+nav ul li:last-child {
+    margin-right: 0
+}
+
+
+.dropdown2  ,.dropdownForCheckWorkers {
+    width: 32%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    height: 45px !important;
+    outline: none;
+    text-align: left;
+    border-bottom: 4px solid #01292C;
+}
+.section1 nav ul{
+    background: rgba(4, 86, 97, 0.6);
+}
+.firstSectionContent .dropdownForCheckWorkers ,.firstSectionContent .dropdown2{
+    height: 100% !important;
+}
+.dropdown2 .select , .dropdownForCheckWorkers  .select{
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.filters {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.dropdown2 .select >span.icon ,.dropdownForCheckWorkers .select >span.icon , .firstSectionContent .dropdownForCheckWorkers .select >span.icon{
+    font-size: 19px;
+    font-weight: bold;
+    color: #012930;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px;
+    margin-top: 2px;
+}
+.date-picker-x {
+    background: rgba(1, 41, 44, 0.97);
+}
+.toursCarousel .owl-carousel .owlItemContent {
+    min-height: 500px;
+}
+.dropdown.active .select > span.icon, .dropdownForCheckWorkers.active .select > span.icon {
+    transform: rotate( 90deg)
+}
+.dropdown.active .select > span.icon, .dropdownForCheckWorkers.active .select > span.icon.location {
+    transform: rotate( 0deg)
+}
+.dropdown2 .dropdown-menu , .dropdownForCheckWorkers .dropdown-menu {
+    position: absolute;
+    background-color: rgba(1, 41, 44, 0.97);
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 0px 8px 8px;
+    overflow: hidden;
+    display: none;
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 9;
+}
+.date-picker-x::before {
+    border-color: rgba(1, 41, 44, 0.97) transparent;
+    left:auto;
+    right: 20px;
+}
+.left .date-picker-x::before{
+    left:20px;
+    right: auto;
+}
+.dropdown2 .dropdown-menu li , .dropdownForCheckWorkers .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+}
+.dropdown2 .dropdown-menu , .dropdownForCheckWorkers .dropdown-menu{
+    padding: 0;
+    list-style: none
+}
+.dropdown2 .dropdown-menu li:hover , .dropdownForCheckWorkers  .dropdown-menu li:hover{
+    background-color: #003435
+}
+.dropdown2 .dropdown-menu li:active , .dropdownForCheckWorkers  .dropdown-menu li:active{
+    background-color: #e2e2e2
+}
+.dropdownForCheckWorkers input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.filters .fas.fa-angle-down {
+    color: #02444d;
+}
+.notHome nav ul {
+    background: transparent;
+}
+.dropdownForCheckWorkers label {
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.dropdownForCheckWorkers li{
+    display: flex;
+    align-items: center;
+}
+.user_text{
+    overflow: hidden;
+    height: 65px;
+}
+.firstSectionContent {
+    margin-top: 170px;
+    color: white
+}
+.firstSectionContent .searchAndContacts{
+    width: 1140px;
+}
+.firstSectionContent .searchAndContacts .filterSearch{
+    width: 100%;
+}
+.firstSectionContent .searchAndContacts
+.filterSearch form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.firstSectionContent .searchAndContacts
+.filterSearch form .selectsAndInputs{
+    display: flex;
+    width: 92%;
+    background: rgba(1, 41, 44, 0.7);
+    padding: 10px;
+    justify-content: space-between;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.firstSectionContent .datapicker{
+    width: 33%;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 25px;
+    color: white;
+    height: 100%;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 4px solid #01292C;
+}
+.firstSectionContent .datapicker .real i{
+    margin-right: 10px ;
+}
+.firstSectionContent .datapicker .real{
+    width: 100%;
+    display: flex;
+}
+.firstSectionContent .datapicker >span{
+    margin: 0 5px;
+}
+.firstSectionContent .datapicker .real input::placeholder{
+    color: white;
+}
+.firstSectionContent .datapicker .real input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    opacity: 0.7;
+    font-size: 16px;
+    padding: 0;
+}
+.firstSectionContent .contactInfo .item:last-child span {
+    margin-right: 10px;
+}
+.firstSectionContent .contactInfo{
+    position: absolute;
+    left: 0;
+    color: #D5B36A;
+}
+.firstSectionContent .searchButton{
+    width: 8%;
+    padding-left: 5px;
+}
+.firstSectionContent .searchButton button {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 41, 44, 0.7);
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+.firstSectionContent .myContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.selectsAndInputs .dropdown2 .dropdown-menu,.selectsAndInputs .dropdownForCheckWorkers .dropdown-menu{
+    box-shadow: none;
+}
+.firstSectionContent h1{
+    width: 100%;
+    font-size: 40px;
+    margin-left: 65px;
+    font-family: SegoeUISemiBold;
+    margin-bottom: 10px;
+}
+
+.toursPage .owlItemContent .info .rate {
+    align-items: center;
+}
+.toursPage .owlItemContent .info .rate {
+    height: auto;
+    max-height: 30px;
+}
+.lang img {
+    padding: 1px;
+    border: 1px solid #D5B36A;
+    border-radius: 50%;
+}
+.dropdown2 .select span.text span {
+    opacity: 0.7;
+
+    margin-left: 15px;
+}
+.selectsAndInputs .dropdownForCheckWorkers .select span.text span {
+    opacity: 0.7;
+}
+.firstSectionContent .contactInfo .item {
+    width: 40px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 45px;
+    transition: .4s;
+    position: relative;
+}
+.firstSectionContent .contactInfo .item a i{
+    font-size: 26px;
+}
+.firstSectionContent .contactInfo .item a{
+    display: flex;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    padding:9px 0 9px 10px
+}
+.firstSectionContent .contactInfo .item span{
+    margin-right: 5px;
+    font-size: 12px;
+}
+.firstSectionContent .contactInfo .item:hover {
+    width: 210px;
+    background: #D5B36A;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+
+}
+.countsOfAnalitics .myContainer {
+    height: 100%;
+}
+.countsOfAnalitics {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -175px;
+    display: flex;
+    height: 427px;
+}
+.countsOfAnalitics .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1140px;
+}
+.countsOfAnalitics .items .item{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+.countsOfAnalitics .items .item>p{
+    width: 100%;
+    font-size: 39px;
+    color: #001F21;
+    font-family: SegoeUIBold;
+}
+.countsOfAnalitics .items .item .itemCount{
+    background: rgba(0, 104, 114, 0.6);
+    border-radius: 20px;
+    width: 100%;
+    border: 2px solid #BCCCDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: SegoeUIBold;
+    height: 369px;
+    font-size: 155px;
+    position: relative;
+}
+.countsOfAnalitics .items .item .itemCount .line{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #CDD9E3;
+    top: 197px;
+    display: none;
+}
+.toursCarousel{
+    margin-top:  250px;
+}
+div.title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-family: SegoeUISemiBold;
+    color: #D4B269;
+    width: 100%;
+}
+div.title p.small{
+
+}
+div.title p.big{
+    color: #001F21;
+    font-size: 65px;
+    line-height: 64px;
+    margin: 0 10px;
+}
+
+.toursCarousel .owl-carousel{
+
+}
+.toursCarousel .owl-carousel .item , .toursPage .item{
+    width: 97%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13);
+}
+.toursCarousel .owl-carousel .owlItemContent , .toursPage .owlItemContent{
+    margin-bottom: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden
+}
+.toursPage .owlItemContent {
+    margin-bottom: 10px;
+}
+.toursPage .owlItemContent .info p{
+    height: 30px;
+    max-height: 30px;
+}
+.toursCarousel .owl-carousel .owlItemContent .image , .toursPage .owlItemContent .image{
+    position: relative;
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+}
+.toursCarousel .owl-carousel .owlItemContent .info, .toursPage .owlItemContent .info{
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+}
+.toursCarousel .owl-carousel .owlItemContent .info .price, .toursPage .owlItemContent .info .price{
+    margin: 5px;
+    font-size: 25px;
+    color: #D4B269;
+}
+.toursCarousel .owl-carousel .owlItemContent .info .title, .toursPage .owlItemContent .info .title{
+    color: #001F21;
+    font-family: SegoeUISemiBold;
+    font-size:16px;
+    margin-bottom: 5px;
+}
+.toursCarousel .owl-carousel .owlItemContent .info .date, .toursPage .owlItemContent .info .date{
+    color: #001F21;
+    font-size: 20px
+}
+.toursCarousel .owl-carousel .owlItemContent .info .rate, .toursPage .owlItemContent .info .rate{
+    display: flex;
+    justify-content: center;
+}
+
+.toursCarousel .owl-carousel .owlItemContent .info .rate img, .toursPage .owlItemContent .info .rate img{
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+}
+.toursCarousel .owl-carousel .owlItemContent .info .daysCount, .toursPage .owlItemContent .info .daysCount{
+    color: #001F21;
+    font-size: 20px;
+    margin: 5px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+    margin: 5px 7px;
+    background: #B5B6B7;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #5E9DA5;
+}
+.toursCarousel .owl-carousel {
+    margin-bottom: 10px;
+}
+.date-picker-x {
+    right: 0;
+    width: 270px;
+}
+.left .date-picker-x.active {
+    left: 0;
+}
+.aboutUs .imageAndInfo {
+    min-height: 800px;
+}
+.addfeedbackModal.single .dropdown2.noMargin {
+    margin-bottom: 10px;
+}
+.willnotDiscard span {
+    font-size: 17px;
+}
+.willnotDiscard {
+    font-size: 13px;
+    color: white;
+    order: 2;
+    margin-bottom: 10px;
+}
+.zepline {
+
+}
+.date-picker-x[data-dpx-type=day] .dpx-item {
+    -ms-flex-preferred-size: 44px;
+    flex-basis: 35px;
+    height: 44px;
+}
+.date-picker-x .dpx-weekday {
+    font-size: 12px;
+    height: 24px!important;
+}
+.zepline .content{
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.zepline .content .image{
+    width: 50%;
+    height: 546px;
+    border-radius: 8px;
+    opacity: 0.85;
+    background-position: center;
+    background-size: cover;
+}
+.zepline .content .context{
+    position: absolute;
+    right: 0;
+    width: 60%;
+    top: 40px;
+    height: 468px;
+    background: white;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 31, 33, 0.18);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.zepline .content .context .title{
+    color: #001F21;
+    font-size: 24px;
+    font-family: SegoeUISemiBold
+}
+.zepline .content .context .desc{
+    margin: 21px 0 13px;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    padding: 0 38px;
+
+}
+.zepline .content .context .readMore{
+    width: 235px;
+    height: 59px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #07555E;
+    color: white;
+    font-size: 20px;
+}
+div.join {
+    background: #F3F6F8;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    padding: 40px 50px;
+    position: relative;
+    height: 681px;
+}
+.join .myContainer {
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+.join .backgroundBlue{
+    background: #2A8189;
+    width: 538px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.join .joinTitle{
+    z-index: 1111;
+    color: white;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: SegoeUISemiBold
+}
+.join .joinTitle .join{
+    font-size: 40px;
+    width: 100%;
+
+}
+.join .joinTitle .joinText{
+    padding-left: 45px;
+    width: 100%;
+    color: #D4B269;
+    font-size: 18px;
+}
+.join .formAndContInfo{
+    width: 75%;
+    display: flex;
+}
+.join .formAndContInfo form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 60px;
+}
+.join .formAndContInfo form input{
+    border: 2px solid #001F21;
+    margin-bottom: 20px;
+    height: 61px;
+    padding: 10px 20px;
+    background: #f6f6f6c2;
+    font-size: 24px;
+    font-family: SegoeUISemiBold;
+    border-radius: 8px;
+    color: #001F21;
+}
+img.hideInWeb {
+    display: none;
+}
+img.hideinMobile {
+    display: block;
+}
+.join .formAndContInfo form input::placeholder ,
+.join .formAndContInfo form textarea::placeholder {
+    font-size:18px;
+    color: #001F21;
+    opacity: 0.7;
+    font-family: SegoeUISemiBold
+}
+.join .formAndContInfo form textarea{
+    border: 2px solid #001F21;
+    margin-bottom: 5px;
+    height: 246px;
+    padding: 10px 20px;
+    background: #f6f6f6c2;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: SegoeUISemiBold;
+    color: #001F21;
+
+}
+.join .formAndContInfo form button{
+    width: 290px;
+    height: 63px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #07555E;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.join .infoPart{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 60px;
+}
+.join .infoPart .item{
+    margin-bottom: 48px;
+}
+.join .infoPart .item .name{
+    color: #D4B269;
+    font-size: 22px;
+    line-height: 37px;
+}
+.join .infoPart .item a.info{
+    color: #001F21;
+    font-size: 18px;
+    font-family: SegoeUISemiBold;
+    line-height: 37px;
+}
+.donation {
+    background: #F2F5F7;
+    margin-top: 70px;
+    padding: 50px 0;
+    height: 825px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+.donation .myContainer{
+    max-width: 1080px;
+    z-index: 1;
+}
+button {
+    cursor: pointer;
+}
+.donation .myContainer>p{
+    color: #001F21;
+    font-size: 16px;
+    line-height: 27px;
+    opacity: 0.75;
+}
+.donation>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    bottom: 0;
+    height: 100%;
+}
+.donation .formAndContInfo{
+    margin-top: 15px;
+}
+.donation .formAndContInfo form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.donation .formAndContInfo form .check{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    cursor: pointer;
+}
+.donation .formAndContInfo form .check>p{
+    color: #001F21;
+    font-size: 22px;
+    margin-left: 12px;
+    font-family: SegoeUISemiBold;
+}
+.donation .formAndContInfo form .check .customCheck{
+    width: 18px;
+    height: 18px;
+    border: 1px solid;
+    color: #001F21;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donation .formAndContInfo form .check .customCheck.active p{
+    width: 15px;
+    height: 15px;
+    background: #001F21;
+    border-radius: 50%;
+}
+.donation .formAndContInfo form .check .customCheck p{
+
+}
+.donation .formAndContInfo form .check input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.donation .formAndContInfo form .inputs{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.donation .formAndContInfo form .inputs input{
+    width: 45%;
+    height: 56px;
+    margin-bottom: 45px;
+    background: #f6f6f6c2;
+    border: 2px solid #01292C;
+    color: #001F21;
+    font-size: 16px;
+    padding: 0 30px;
+    font-family: SegoeUISemiBold;
+    border-radius: 8px;
+}
+.donation .formAndContInfo form .inputs textarea{
+    width: 100%;
+    height: 145px;
+    background: #f6f6f6c2;
+    margin-bottom: 45px;
+    border: 2px solid #01292C;
+    color: #001F21;
+    padding: 0 30px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: SegoeUISemiBold;
+
+    border-radius: 8px;
+}
+.donation .formAndContInfo form button{
+    width: 290px;
+    height: 63px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #07555E;
+    color: white;
+    font-size: 20px;
+    margin: 10px auto;
+}
+.feedback.toursCarousel {
+    margin-top: 70px;
+}
+.toursCarousel.feedback .owl-carousel .owlItemContent .info {
+    padding: 66px;
+    text-align: center;
+}
+.feedback p.nameSurname{
+    margin-bottom: 13px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    font-size: 20px;
+}
+.feedback p.feedback{
+    font-size: 16px;
+
+    line-height: 27px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+.feedback .addFeedback {
+    display: flex;
+    justify-content: center;
+}
+.feedback .addFeedback button {
+    width: 290px;
+    height: 63px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #07555E;
+    color: white;
+    font-size: 20px;
+    margin: 5px auto;
+}
+.feedback.toursCarousel .owl-carousel .item {
+
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.13);
+    margin: 20px 0;
+    border-radius: 8px 8px 0 0;
+}
+footer {
+    background: #062226;
+    padding: 20px 0 10px;
+    color: white;
+    margin-top: 10px;
+}
+footer .myContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .logo{
+    width: 19%;
+}
+footer .logo img{
+
+}
+footer .menu{
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    font-size: 18px;
+}
+footer .menu li{
+    margin-bottom: 8px;
+}
+footer .subscribe {
+    width: 30%;
+
+}
+footer .subscribe>p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+footer form{
+    width: 100%;
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    justify-content: space-between;
+    height: 56px;
+}
+footer form input{
+    width: 90%;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: #001F21;
+}
+footer form button{
+    width: 10%;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding-right: 10px;
+}
+footer .followUs {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .followUs p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+footer .followUs a{
+    margin: 12px;
+}
+footer .followUs a img{
+
+}
+footer .contactInfo>p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+footer .contactInfo{
+    width: 15%;
+}
+footer .contactInfo .item{
+
+}
+footer .contactInfo .item a{
+    display: flex;
+    font-size: 14px;
+}
+footer .contactInfo .item a span{
+
+}
+footer .contactInfo .item a p{
+    width: 30px;
+    margin-bottom: 15px;
+}
+
+.sction1.notHome {
+    position: relative;
+    height: max-content;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #012930;
+    margin-bottom: 50px;
+    padding-bottom: 13px;
+}
+.toursPage .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.toursPage .items .item{
+    width: 31%;
+    margin: 0.5%;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13);
+}
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    align-items: center;
+}
+.pagination li{
+    font-size: 30px;
+    margin: 0 11px;
+    color: #001F21
+}
+.pagination li.nextPrev {
+    font-size: 22px;
+    margin: 0 11px;
+    margin-top: 5px
+
+}
+.pagination li.active{
+    color: #5E9DA5;
+}
+
+.toursPage {
+
+}
+
+.toursPage .filters{
+    font-family: SegoeUISemiBold;
+    margin-bottom: 30px;
+}
+.toursPage .filters .dropdown2{
+    width: 19%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 16px;
+    color: #001F21;
+    height: 100%;
+    outline: none;
+    text-align: left;
+    border-bottom: initial;
+    border: 2px solid #001F21;
+    border-radius: 8px;
+}
+.firstSectionContent .dropdownForCheckWorkers {
+    width: 32%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    height: 100%;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    text-align: left;
+    border-bottom: 4px solid #01292C;
+}
+.toursPage .datapicker label i {
+    width: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toursPage .datapicker label input::placeholder{
+    color: #001F21;
+    font-family: SegoeUISemiBold;
+}
+.toursPage .datapicker label input {
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    font-family: SegoeUISemiBold;
+    font-size: 20px;
+    color: #001F21;
+    border-radius: 8px;
+}
+.toursPage .datapicker label {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.toursPage .datapicker label:last-child {
+    width: 100%;
+}
+.toursPage .datapicker>span {
+    margin: 0 5px;
+}
+.toursPage .datapicker {
+    width: 19%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 20px;
+    color: #001F21;
+    outline: none;
+    align-items: center;
+    padding-right: 10px;
+    display: flex;
+    text-align: left;
+    border-bottom: initial;
+    border: 2px solid #001F21;
+    border-radius: 8px;
+
+}
+.toursPage .dropdown2 .dropdown-menu  {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    box-sizing: content-box;
+    left: -2.5px;
+    right: 2px;
+    top: 97%;
+    margin-top: 1px;
+    box-shadow: none;
+    border-radius: 0 0px 8px 8px;
+    overflow: unset;
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 9;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+.toursPage .filters .dropdown2 .select span.text span {
+    opacity: 1;
+    font-style: initial;
+    margin-left: 0;
+}
+.toursPage .dropdown2 .dropdown-menu li:hover {
+    background-color: #5E9DA5;
+}
+.toursPage .filters .dropdown2.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none
+}
+.outer {
+    max-width:690px;
+    width: 45%;
+}
+#big .item {
+    background: #012930;
+    padding: 0px;
+    margin: 2px;
+    color: #FFF;
+
+    height: 550px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#thumbs .item h1 {
+    height: 100%;
+}
+#thumbs .item .compass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(94, 157, 165, 0.53);
+    justify-content: center;
+    font-size: 24px;
+    align-items: center;
+    display: none;
+}
+#thumbs {
+    width: 90%;
+    margin: 20px auto;
+}
+#thumbs.owl-carousel .owl-nav button.owl-prev, #thumbs.owl-carousel .owl-nav button.owl-next{
+    display: block;
+}
+#thumbs.owl-theme .owl-dots .owl-dot {
+    display: none;
+    /* zoom: 1; */
+}
+#thumbs.owl-carousel .owl-nav button.owl-prev, #thumbs.owl-carousel .owl-nav button.owl-next {
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: 40%;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    font-size: 20px;
+    color: #5E9DA5;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+#thumbs.owl-carousel .owl-nav button.owl-next {
+    border-radius: 50%;
+    position: absolute;
+    left: inherit;
+    right: -40px;
+    top: 40%;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    font-size: 20px;
+    color: #5E9DA5;
+
+    justify-content: center;
+    align-items: center;
+}
+#thumbs .item:hover .compass{
+    display: flex;
+}
+#thumbs .item {
+    background: #C9C9C9;
+    height:70px;
+    line-height:70px;
+    padding: 0px;
+    margin:2px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 175px;
+
+    text-align: center;
+    cursor: pointer;
+}
+#thumbs .item h1   , #big .item h1   {
+    width: 100%;
+    height: 100%;
+}
+#thumbs .item h1 img , #big .item h1 img{
+    font-size: 18px;
+    height: 100%;
+    width:  100%;
+}
+#thumbs .current .item {
+    background: #062226;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #D6D6D6;
+}
+#big.owl-theme {
+    position: relative;
+}
+#big.owl-theme .owl-next, #big.owl-theme .owl-prev {
+    background:#333;
+    width: 22px;
+    line-height:40px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align:center;
+    top: 50%; }
+#big.owl-theme .owl-prev { left: 10px; }
+#big.owl-theme .owl-next { right: 10px; }
+#thumbs.owl-theme .owl-next, #thumbs.owl-theme .owl-prev { background:#333; }
+.singlePageOfTour {
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.addfeedbackModal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1111111111111111;
+    display: none;
+}
+.addfeedbackModal .flexable{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.closeModal {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.addfeedbackModal .content{
+    width: 770px;
+    height: 700px;
+    background: #012930;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    padding: 50px 70px;
+    position: relative;
+}
+.addfeedbackModal .content form{
+    display: flex;
+    flex-direction: column;
+}
+.addfeedbackModal .content{
+
+}
+div.modalTitle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 34px;
+    color: white;
+    font-size: 40px;
+}
+.addfeedbackModal input{
+    background: white;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.addfeedbackModal textarea{
+    background: white;
+    border: none;
+    border-radius: 5px;
+    height: 250px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    font-size: 20px;
+    resize: none;
+}
+.addfeedbackModal button{
+    background: #D5B36A;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+div.modalTitle p.small{
+    color: #D4B269;
+    font-size: 20px;
+}
+div.modalTitle p.big {
+    line-height: 40px;
+    margin-left: 10px;
+}
+.includes {
+    padding-left: 40px;
+}
+.includes .title{
+    color: #001F21;
+    font-size: 30px;
+    margin: 40px 0 26px;
+    font-family: SegoeUISemiBold;
+}
+.includes .items{
+
+}
+.includes .items .item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.restaurant.hotel .toursPage form{
+    width: 100%;
+}
+.includes .items .item .bullet{
+    width: 15px;
+    height: 15px;
+    background: #5E9DA5;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 6px;
+}
+.includes .items .item .first .text {
+    z-index: 111;
+    background: white;
+    padding: 5px 15px 3px 0;
+    color: #001F21;
+    font-size: 20px;
+}
+.includes .items .item .first{
+    display: flex;
+    background: white;
+    z-index: 1111;
+    position: relative;
+    width: 50%;
+    align-items: center;
+}
+.includes .items .item .first .line{
+    width: 100%;
+    height: 2px;
+    background: #B5B6B7;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    z-index: -1;
+    left: 30px;
+}
+.includes .items .item .second{
+    width: 40%;
+    padding: 5px 15px 3px 20px;
+    background: white;
+    font-size: 20px;
+    z-index: 1111;
+    color: #001F21;
+}
+.starrate span.ctrl { position:absolute; z-index:2;}
+.starrate { color:var(--secondary); cursor:pointer}
+.starrate.saved { color:var(--dark);}
+.starrate:hover { color:var(--primary);} .starrate.saved:hover { color:var(--orange);}
+
+.infoAboutTour{
+    width: 55%;
+    color: #001F21;
+    padding-left: 20px;
+}
+.infoAboutTour .title{
+    font-family: SegoeUISemiBold;
+    font-size: 34px;
+    margin: 30px 0 10px;
+}
+.infoAboutTour .days{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.infoAboutTour .date{
+    font-size: 24px;
+    margin-bottom: 10px
+}
+.oldAndNewPrice{
+    margin-bottom: 10px;
+}
+.oldAndNewPrice .old{
+    font-size: 30px;
+    margin-right: 20px;
+    text-decoration: line-through;
+}
+.oldAndNewPrice .new{
+    color: #D4B269;
+    font-size: 30px;
+}
+.privacy {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.infoAboutTour .desc{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.infoAboutTour .seeSchedule{
+
+}
+.infoAboutTour .seeSchedule .clickableSchedul{
+    font-size: 24px;
+    text-decoration: underline;
+    color: #5E9DA5;
+    font-family: SegoeUISemiBold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.infoAboutTour .seeSchedule .hiddenSchedule{
+    display: none;
+}
+.infoAboutTour .seeSchedule .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 14px;
+}
+.infoAboutTour .seeSchedule .item.one {
+    order: 1
+}
+.infoAboutTour .seeSchedule .item.two {
+    order: 2
+}
+.infoAboutTour .seeSchedule .item.three {
+    order: 3
+}
+.infoAboutTour .seeSchedule .item.four {
+    order: 4
+}
+.infoAboutTour .seeSchedule .item.five {
+    order: 5
+}
+.infoAboutTour .seeSchedule .item.six {
+    order: 6
+}
+.infoAboutTour .seeSchedule .item.seven {
+    order: 7
+}
+.infoAboutTour .seeSchedule .item{
+    width: 30%;
+    margin-right: 3%;
+}
+
+.infoAboutTour .seeSchedule .item:nth-child(5){
+    margin-right: 5%;
+}
+.infoAboutTour .seeSchedule .item .days{
+    font-size: 20px;
+    font-family: SegoeUISemiBold;
+    margin-bottom: 5px;
+}
+.infoAboutTour .seeSchedule .item .desc{
+
+}
+.infoAboutTour .rate{
+
+}
+.rate span{
+    font-size: 30px;
+    color: #D4B269;
+    margin-right: 5px;
+}
+.rate img{
+    width: 30px;
+}
+.rateNow{
+    margin-bottom: 20px;
+}
+.infoAboutTour .rateNow #test{
+
+}
+.infoAboutTour .rateNow .ctrl{
+
+}
+.rateNow i{
+    color: #fcb44d;
+    font-size: 29px;
+    margin: 10px 4px 0 0;
+}
+.infoAboutTour .bookNow{
+    width: 235px;
+    height: 59px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #07555E;
+    color: white;
+    font-size: 20px;
+}
+.addfeedbackModal.single .datapicker input{
+    width: 90%;
+}
+.addfeedbackModal.single .datapicker{
+    background: white;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 100%
+}
+.addfeedbackModal.single .content form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.addfeedbackModal.single input{
+    width: 100%;
+}
+.addfeedbackModal.single div.modalTitle {
+
+    width: 100%;
+}
+.addfeedbackModal.single .dropdown2  {
+    width: 48%;
+    display: inline-block;
+    background-color: white;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 20px;
+    color: #001F21;
+    outline: none;
+    text-align: left;
+    font-family: SegoeUISemiBold;
+    border-bottom: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.addfeedbackModal.single .dropdown2 .dropdown-menu{
+    background-color: white
+
+}
+.addfeedbackModal.single .dropdown2 .select >span.icon{
+    font-size: 13px;
+    color: #062226;
+    font-weight: bold;
+    transform: rotate(90deg);
+}
+.addfeedbackModal.single .dropdown2 .select span.text span {
+    font-style:  inherit;
+
+}
+.addfeedbackModal.single .total{
+    width: 100%;
+    font-size: 28px;
+    text-align: right;
+    color: white;
+    font-family: SegoeUISemiBold;
+    margin:40px 0 10px;
+    order: 3;
+}
+.addfeedbackModal.single   .content {
+    width: 770px;
+    z-index: 111111;
+    height: max-content;
+    overflow-y: auto;
+    max-height: 90vh;
+
+}
+.addfeedbackModal.single button.first {
+    margin-bottom: 20px;
+    order: 2;
+}
+.addfeedbackModal.single button {
+    width: 100%;
+
+}
+.addfeedbackModal.single {
+
+}
+.restaurant .toursPage > .myContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.restaurant #big .item{
+    width: 100%;
+}
+.restaurant #thumbs .item{
+    width: auto;
+}
+.restaurant .info .rate{
+    margin-top: 10px;
+}
+.restaurant .infoPart{
+    width: 55%;
+    margin-top: 30px;
+
+    padding-left: 20px;
+}
+.restaurant .infoPart .title{
+    font-size: 27px;
+    color: #001F21;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: SegoeUISemiBold;
+}
+.logo img {
+    height: auto;
+}
+.restaurant .infoPart .price{
+    color: #D4B269;
+    font-size: 30px;
+    margin-bottom: 27px;
+}
+.restaurant .infoPart .hours{
+    color: #5E9DA5;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.restaurant .infoPart .descrtiption{
+    color: #001F21;
+    font-size: 16px;
+    line-height: 26px;
+}
+.restaurant .outer{
+    margin-bottom: 65px;
+    margin-top: 30px;
+}
+#menu_form {
+    margin-bottom: 50px;
+}
+.filtersForType {
+    margin: 30px 0 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.filtersForType button{
+    width: 18%;
+    height: 60px;
+    border: 2px solid #001F21;
+    border-radius: 8px;
+    margin-right: 1%;
+    background: white;
+    display: flex;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.filtersForType button.active{
+    background: #001F21;
+    color: white;
+}
+.filtersForType button.active span {
+    color: white;
+}
+.filtersForType button.active .white{
+    display: block;
+}
+.filtersForType button.active .black{
+    display: none;
+}
+.filtersForType button  .white{
+    display: none;
+}
+.filtersForType button  .black{
+    display: block;
+}
+.filtersForType button span{
+    font-family: SegoeUISemiBold;
+    font-size: 16px;
+    color: #001F21;
+}
+.filtersForType button img{
+    width: 37px;
+    height: auto;
+    margin-right: 10px;
+    max-height: 100%;
+}
+.chooseValute {
+    display: flex;
+    margin-right: 25px;
+}
+.chooseValute>div {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #D5B36A;
+    color: white;
+    margin: 0 5px;
+    position: relative;
+}
+.chooseValute >div a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px
+
+}
+.chooseValute >div.active{
+    color: #D5B36A;
+    background: white;
+}
+.searchaAndLang {
+    display: flex;
+}
+.blogPage {
+
+}
+.blogPage .twoParts {
+    display: flex;
+    justify-content: space-between;
+}
+.blogPage .latestnews{
+    font-size: 26px;
+    color: #5E9DA5;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    font-family: SegoeUIBold;
+}
+.blogPage .bigItems{
+    width: 58%;
+}
+.blogPage .bigItems .item{
+    margin-bottom: 43px;
+}
+.blogPage .bigItems .item .image{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.blogPage .bigItems .item .title{
+    font-size: 34px;
+    margin: 10px 0;
+    font-family: SegoeUISemiBold;
+}
+.blogPage .bigItems .item .desc{
+    font-size: 16px;
+    line-height: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+.blogPage .buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+.blogPage .buttons button{
+    width: 235px;
+    height: 59px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #07555E;
+    color: white;
+    font-size: 18px;
+    margin: 7px;
+    position: relative;
+}
+.blogPage .buttons button a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.blogPage .olderNews {
+    width: 40%;
+}
+.blogPage .olderNews form{
+    width: 100%;
+    display: flex;
+    border: 2px solid #5E9DA5;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+.blogPage .olderNews form input{
+    width: 90%;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+
+}
+.blogPage .olderNews form button{
+    width: 10%;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+.blogPage .itemsOldNews{
+    background: rgba(233, 233, 233, 0.47);
+    height: max-content;
+    max-height: 2700px;
+    overflow-y: auto;
+    padding: 23px 16px;
+    margin-bottom: 50px;
+}
+.blogPage .itemsOldNews .month{
+    padding: 7px 15px;
+    width: max-content;
+    min-width: 50%;
+    font-family: SegoeUISemiBold;
+    height: 58px;
+    background: #5E9DA5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.blogPage .itemsOldNews .items{
+
+}
+.blogPage .itemsOldNews .items .item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.blogPage .itemsOldNews .items .item .image{
+    width: 50%;
+    height: 186px;
+    background-position: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-size: cover;
+}
+.blogPage .itemsOldNews .items .item .info{
+    width: 48%;
+}
+.blogPage .itemsOldNews .items .item .info a{
+    font-size: 20px;
+    font-family: SegoeUISemiBold;
+    font-size: 14px;
+}
+.blogPage .itemsOldNews .items .item .info .desc{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-top: 20px;
+    line-height: 26px;
+}
+.blogPage {
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b7b7b7;
+    border-radius: 39px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+.blogPartial .blogPage .twoParts {
+    margin-top: 100px;
+}
+.blogPartial .blogPage .latestnews {
+    margin-top: 0
+}
+.blogPartial .blogPage .bigItems .item .desc{
+    -webkit-line-clamp: unset;
+}
+.blogPartial .blogPage .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0;
+}
+.error {
+    color: #f83b3b;
+    margin-bottom: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+.room .error.full {
+    position: absolute;
+    top: -25px;
+    left: 0;
+}
+div.saleInItem {
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+    background: #D4B269;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+div.saleInItem p {
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: SegoeUiBold;
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+}
+.aboutUs .imageAndInfo{
+    margin-top: 90px;
+}
+.aboutUs .imageAndInfo img{
+    float: left;
+    border-radius: 5px;
+    margin: 0 20px 10px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.aboutUs .imageAndInfo p{
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+.teamItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+.teamItems .item{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px  ;
+}
+.teamItems .item:nth-child(3n+2){
+
+    margin: 0 5%;
+    margin-bottom: 80px  ;
+}
+.teamItems .item .image{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+.teamItems .item .name{
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin: 10px 0;
+    font-family: SegoeUISemiBold;
+}
+.teamItems .item .proffesion{
+    color: #D4B269;
+    font-size: 25px;
+}
+.youHave {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.youHave img {
+    width: 32px;
+    margin-right: 25px;
+}
+.items.hotel {
+    width: 100%;
+}
+
+.items.hotel .item {
+    width: 100% !important;
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.items.hotel .item .image{
+    background-image: url(http://localhost:8000/site/img/hotel/bedroom-decoration-hotels-interior-833045.png);
+    height: 405px;
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+div.clearAll {
+    width: 100%;
+    order: 2;
+}
+button.clearAll{
+
+    background: transparent;
+    border: none;
+
+    text-align: right;
+    padding: 8px 10px;
+    text-decoration: underline;
+    color: #D4B269;
+    font-size: 17px;
+    font-weight: bold;}
+.items.hotel .item .info {
+    width: 70%;
+    padding: 22px;
+    font-family: SegoeUISemiBold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #F5F5F5;
+}
+.items.hotel .item .firstPart{
+
+}
+.infoAboutTour .days.other {
+    font-size: 12px;
+    font-weight: bold;
+    color: #5E9DA5;
+}
+.items.hotel .item .title{
+    font-size: 24px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.rateNow.ratingNew {
+    pointer-events: none;
+}
+.items.hotel .item .payOrFree{
+    color: #5E9DA5;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+.youHave span {
+    font-size: 14px;
+}
+.items.hotel .item .reserved {
+    color: #FF0909;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.items.hotel .item .roomSize sup{
+    font-size: 10px;
+    font-weight: bold;
+}
+.items.hotel .item .roomSize{
+    color: #5E9DA5;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+.hotel   .secondPart{
+    display: flex;
+    justify-content: space-between;
+}
+.hotel   .secondPart .bookNow {
+    width: 235px;
+    height: 59px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #07555E;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+.hotel.room .descrtiption{
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+.items.hotel .item .secondPart .startingPrice{
+    color: #D4B269;
+    font-size: 22px;
+}
+.restaurant.hotel .toursPage .filters .dropdown2 ,.restaurant.hotel .toursPage .filters .datapicker{
+    margin-right: 1%;
+}
+.infoAboutTour .bookNow.deactive {
+    background: #c9c9c9;
+}
+.restaurant.hotel .toursPage .filters {
+    margin-top: 50px;
+    justify-content: flex-start;
+}
+
+.room .toursPage .items .item .first {
+    margin-bottom: 10px;
+    width: 50%;
+}
+.room .toursPage .items .item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: none;
+}
+.room.addfeedbackModal.single .datapicker {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: transparent;
+    padding: 0;
+}
+.room.addfeedbackModal.single .datapicker .partial .real {
+    width: 100%;
+}
+.room.addfeedbackModal.single .datapicker .real, .room.addfeedbackModal.single .datapicker .partial {
+    width: 48%;
+    display: inline-block;
+    background-color: white;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 20px;
+    color: #001F21;
+    outline: none;
+    text-align: left;
+    font-family: SegoeUISemiBold;
+    border-bottom: none;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0 10px;
+}
+.modals {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 111111;
+    bottom: 0;
+    display: none;
+}
+.modals .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modals .content>div{
+    position: relative;
+    text-align: center;
+    background: #012930;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 31, 33, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.successMessage .content>div {
+    width: max-content;
+    height: max-content;
+    padding: 30px;
+    max-height: 580px;
+    max-width: 80%;
+}
+.modals  .content>div{
+
+}
+.modals  .content>div div.title p.big {
+    font-size: 50px;
+    line-height: 45px;
+    font-family: SegoeUISemiBold;
+    color: white;
+}
+.shareIcons .content>div a {
+    margin: 0 15px;
+}
+.shareIcons .content>div {
+    width: 1000px;
+    height: 300px;
+}
+.reservedNumber .content>div .text img{
+    margin-right: 25px;
+    width: 88px;
+}
+.reservedNumber .content>div .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 43px;
+    font-size: 32px;
+}
+.reservedNumber .content>div {
+    width: 1000px;
+    height: 330px;
+}
+.reservedNumber .content>div button {
+    height: 50px;
+    width: 850px;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: none;
+    background: #D5B36A;
+    font-family: SegoeUISemiBold;
+    font-size: 28px;
+}
+.successMessage .closeModal {
+    display: none;
+}
+.successMessage .content>div .text{
+    font-size: 15px;
+    margin-bottom: 28px;
+    font-family: SegoeUISemiBold;
+}
+.successMessage .content>div .qr{
+    font-size: 28px;
+    margin-bottom: 28px;
+    font-family: SegoeUISemiBold;
+}
+.successMessage .content>div img{
+    width: auto;
+    max-width: 300px;
+    margin: 0 auto;
+    height: 290px;
+}.soon{
+     font-weight: bold;
+     color: #06222659!important;
+ }
+.error {
+    color: white
+}
+.rate img{
+    display: none;
+}
+.ticketReserved{
+    color: #012930;
+    padding: 10px 0;
+    font-size: 13px !important
+}
+/*Styling Selectbox*/
+.dropdownForCheckWorkers {
+    width: 19%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 16px;
+    color: #001F21;
+    height: 100%;
+    outline: none;
+    text-align: left;
+    border-bottom: initial;
+    border: 2px solid #001F21;
+    border-radius: 8px;
+}
+.dropdownForCheckWorkers  .select{
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+
+.dropdownForCheckWorkers .select >span.icon {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+
+.dropdownForCheckWorkers.active .select > span.icon {
+    transform: rotate(-90deg)
+}
+header .logo button img{
+    height: auto;
+}
+.dropdownForCheckWorkers .dropdown-menu {
+    position: absolute;
+    background-color:white;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.firstSectionContent .dropdownForCheckWorkers .dropdown-menu {
+    position: absolute;
+    background-color: #02383b;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.dropdownForCheckWorkers .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+}
+.dropdownForCheckWorkers .dropdown-menu{
+    padding: 0;
+    list-style: none
+}
+.dropdownForCheckWorkers input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.dropdownForCheckWorkers label {
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.dropdownForCheckWorkers li{
+    display: flex;
+    align-items: center;
+}
+.payment {
+    order: 2;
+    font-size: 12px;
+    color: white;
+}
+.willbeAnswere {
+    font-size: 12px;
+    margin-bottom: 20px
+}
+.payment img {
+    width: 200px;
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+.reserved{
+    pointer-events: none;
+    color: red !important;
+}
+.dpx-out{
+    opacity: 0;
+    /*display: none!important;*/
+}
+.reservedRed {
+    color: red;
+    font-size: 12px;
+    order: 2;
+    margin-bottom: 5px;
+}
+/*.toursCarousel .owl-carousel .owlItemContent .info>p, .toursPage .owlItemContent .info*/
+
+.loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11111111111111111;
+    background: white;
+}
+.loader>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader>div img{
+    width: 50%;
+    max-width: 400px;
+}
+.errorPage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.errorPage .myContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.errorPage .myContainer>img{
+    width: 50%;
+}
+
+.errorPage .myContainer .content{
+    width: 50%;
+    padding: 20px;
+}
+.errorPage .myContainer .content>div{
+    width: 235px;
+    height: 59px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background: #07555E;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.errorPage .myContainer .content a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.errorPage .myContainer .content h1{
+    font-size: 80px;
+    text-align: center;
+    color: #D0AF67;
+    font-weight: bold;
+}
+.errorPage .myContainer .content p{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.reserved{
+    pointer-events: none;
+    color: #444 !important;
+}
+.dpx-disabled{
+    pointer-events: none;
+}
+.dpx-content-box .dpx-out{
+    opacity: 0;
+    /*display: none!important;*/
+}
+.reservedRed {
+    color: red;
+    font-size: 12px;
+    order: 2;
+    margin-bottom: 5px;
+}
+
+.dropdown2  ,.dropdownForCheckWorkers {
+    width: 32%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    height: 45px !important;
+    outline: none;
+    text-align: left;
+    border-bottom: 4px solid #01292C;
+}
+.section1 nav ul{
+    background: rgba(4, 86, 97, 0.6);
+}
+.firstSectionContent .dropdownForCheckWorkers ,.firstSectionContent .dropdown2{
+    height: 100% !important;
+}
+.dropdown2 .select , .dropdownForCheckWorkers  .select{
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.filters {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.dropdown2 .select >span.icon ,.dropdownForCheckWorkers .select >span.icon , .firstSectionContent .dropdownForCheckWorkers .select >span.icon{
+    font-size: 19px;
+    font-weight: bold;
+    color: #012930;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px;
+    margin-top: 2px;
+}
+.date-picker-x {
+    background: rgba(1, 41, 44, 0.97);
+}
+.toursCarousel .owl-carousel .owlItemContent {
+    min-height: 500px;
+}
+.dropdown.active .select > span.icon, .dropdownForCheckWorkers.active .select > span.icon {
+    transform: rotate( 90deg)
+}
+.dropdown.active .select > span.icon, .dropdownForCheckWorkers.active .select > span.icon.location {
+    transform: rotate( 0deg)
+}
+.dropdown2 .dropdown-menu , .dropdownForCheckWorkers .dropdown-menu {
+    position: absolute;
+    background-color: rgba(1, 41, 44, 0.97);
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 0px 8px 8px;
+    overflow: hidden;
+    display: none;
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 9;
+}
+.date-picker-x::before {
+    border-color: rgba(1, 41, 44, 0.97) transparent;
+    left:auto;
+    right: 20px;
+}
+.left .date-picker-x::before{
+    left:20px;
+    right: auto;
+}
+.dropdown2 .dropdown-menu li , .dropdownForCheckWorkers .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+}
+.dropdown2 .dropdown-menu , .dropdownForCheckWorkers .dropdown-menu{
+    padding: 0;
+    list-style: none
+}
+.dropdown2 .dropdown-menu li:hover , .dropdownForCheckWorkers  .dropdown-menu li:hover{
+    background-color: #003435
+}
+.dropdown2 .dropdown-menu li:active , .dropdownForCheckWorkers  .dropdown-menu li:active{
+    background-color: #e2e2e2
+}
+.dropdownForCheckWorkers input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.filters .fas.fa-angle-down {
+    color: #02444d;
+}
+.notHome nav ul {
+    background: transparent;
+}
+.dropdownForCheckWorkers label {
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.dropdownForCheckWorkers li{
+    display: flex;
+    align-items: center;
+}
+/*.
+
+/*Styling Selectbox*/
+.dropdownForCheckWorkers {
+    width: 30%;
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 16px;
+    color: #001F21;
+    height: 100%;
+    outline: none;
+    margin: 5px;
+    text-align: left;
+    border-bottom: initial;
+    border: 2px solid #001F21;
+    border-radius: 8px;
+}
+.dropdownForCheckWorkers  .select{
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+
+.dropdownForCheckWorkers .select >span.icon {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+
+.dropdownForCheckWorkers.active .select > span.icon {
+    transform: rotate(-90deg)
+}
+header .logo button img{
+    height: auto;
+}
+.dropdownForCheckWorkers .dropdown-menu {
+    position: absolute;
+    background-color:white;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.firstSectionContent .dropdownForCheckWorkers .dropdown-menu {
+    position: absolute;
+    background-color: #02383b;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.dropdownForCheckWorkers .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+}
+.dropdownForCheckWorkers .dropdown-menu{
+    padding: 0;
+    list-style: none
+}
+.dropdownForCheckWorkers input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.dropdownForCheckWorkers label {
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.dropdownForCheckWorkers li{
+    display: flex;
+    align-items: center;
+}
+
+.absolutedSpanPrice{
+    position: absolute;
+    right: 0;
+    color: #D4B269;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+}
+.items.hotel .item .secondPart .startingPrice {
+    color: #07555e;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#app .navbar {
+    display: none;
+}
+.hide{
+    display: none;
+}

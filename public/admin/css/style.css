@@ -1,0 +1,1263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: montseratReg;
+    src:url(../fonts/Montserratarm-Regular.otf);
+}
+@font-face {
+    font-family: montseratNotArmReg;
+    src:url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: montseratsemiBold;
+    src:url(../fonts/Montserratarm-SemiBold.otf);
+}
+@font-face {
+    font-family: montseratBold;
+    src:url(../fonts/Montserratarm-Bold.otf);
+}
+@font-face {
+    font-family: montseratBold;
+    src:url(../fonts/Montserratarm-Bold.otf);
+}
+body {
+    font-family: montseratReg;
+    overflow-x: hidden;
+}
+
+
+h1, h2 {
+    font-weight: normal;
+}
+*{
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+input , button , textarea {
+    outline: none !important;
+}
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.myContainer {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.sction1 {
+    position: relative;
+    height: 900px;
+}
+.sction1 header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 49px;
+}
+a.montserat {
+    font-family: montseratNotArmReg;
+    font-weight: 600;
+}
+.sction1 .logo{
+
+}
+.sction1 .logo img{
+    width: 170px;
+}
+.sction1 .searchaAndLang{
+
+}
+.sction1 .searchaAndLang .lang{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 13px 12px;
+    align-items: center;
+}
+.sction1 .searchaAndLang .lang a{
+    margin: 0 4px;
+}
+.sction1 .searchaAndLang .search{
+    width: 400px;
+}
+.sction1 .searchaAndLang .search form{
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+}
+.sction1 .searchaAndLang .search form input{
+    width: 400px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.sction1 .searchaAndLang .search form button{
+    width: 47px;
+    height: 45px;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+}
+.sction1 .searchaAndLang .search form button img{
+
+}
+.mobile{
+    display: none;
+}
+.sction1 nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 29px;
+}
+.sction1 nav ul{
+
+}
+.sction1 nav ul li{
+    margin: 0 10px;
+}
+.sction1 nav ul a{
+    font-size: 21px;
+    color: white;
+}
+.sction1 .firstSectionContent .myContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 86px;
+}
+.sction1 .firstSectionContent .image{
+    padding: 13px;
+    border: 3px solid #0568A7;
+    border-radius: 8px;
+    width:58%;
+    max-width: 995px;
+}
+.sction1 .firstSectionContent .image img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%
+}
+.sction1 .firstSectionContent .info{
+    width: 40%;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 30px;
+
+}
+.sction1 .firstSectionContent .info h2{
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 26px;
+    color: white;
+}
+.sction1 .firstSectionContent .info p{
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    padding-bottom: 100px;
+}
+.sction1 .firstSectionContent .socials{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    justify-content: flex-start;
+    padding-top: 100px
+}
+.sction1 .firstSectionContent .socials a{
+    font-size: 34px;
+    color: white;
+    margin: 20px 0;
+}
+.sction1 .firstSectionContent .socials i{
+
+}
+.sction1  .yellowBackground{
+    width: 65%;
+    max-width: 1244px;
+    height: 100%;
+    background: #F9CF24;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.sction1 .whiteBackgroundWithYellowPoints {
+    width: 35%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -1;
+}
+.sction1 .whiteBackgroundWithYellowPoints img{
+
+}
+.section2{
+    position: relative;
+    height: 800px;
+    margin-top: 135px;
+}
+.section2 .blueBackground{
+    width: 63%;
+    max-width: 1244px;
+    height: 100%;
+    background: #0568A7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.section2 .myContainer{
+    height: 100%;
+    display: flex;
+}
+.section2 .text{
+    width: 67.5%;
+    color: white;
+    padding: 44px 0;
+    position: relative;
+    word-break: break-word;
+    padding-right: 21.5%;
+}
+
+.section2 .text img{
+    position: absolute;
+    width: 600px;
+    right: -410px;
+    bottom: 25px;
+}
+.section2 .text h3{
+    font-size: 45px;
+    color: #F9CF24;
+    margin-bottom: 54px;
+}
+.section2 .text p{
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 90px;
+}
+.section2 .more{
+    width: 220px;
+    height: 51px;
+    border-radius: 8px;
+    position: relative;
+    background: #FFFFFF;
+    color: #0568A7;
+    font-size: 21px;
+}
+.section2 .more a{
+    position: absolute;
+    border-radius: 8px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2 .image{
+    width: 32%;
+    position: relative;
+}
+.section2 .image img{
+    position: absolute;
+    left: -150px;
+    bottom: 60px;
+    width: 700px;
+}
+.section3 {
+    background: url(../img/home.png) no-repeat;
+    background-size: 20% 100%;
+}
+.ourServices{
+
+}
+.ourServices h2  {
+    padding: 90px 0 77px;
+    text-align: center;
+    font-size: 48px;
+    color: #F9CF24;
+}
+
+.ourServices .items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ourServices .items .item{
+    width: 26%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+.ourServices .items .item .image{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    border-radius: 50%;
+}
+.ourServices .items .item .image:hover .hoverOrder{
+    display: flex;
+}
+.ourServices .items .item .image img{
+    width: 100%
+}
+.ourServices .items .item .image .hoverOrder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(5, 104, 167, 0.97);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 23px;
+}
+.ourServices .items .item .image .hoverOrder span{
+    cursor: pointer;
+}
+.ourServices .items .item .serviceName{
+    width: 100%;
+    text-align: center;
+}
+.ourServices .items .item .serviceName p{
+    max-width: 280px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px auto;
+    text-decoration: underline;
+    color: #011420;
+    line-height: 34px;
+}
+.ourServices .items .item .serviceName p span{
+    position: relative;
+}
+.ourServices .items .item .serviceName p span:before{
+    content: '';
+    position: absolute;
+    background: #F9CF24;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: -22px;
+    top: 8px;
+}/*owl styles*/
+
+.owl-carousel .owl-dots.disabled {
+    display: none !important;
+    justify-content: center;
+}
+.owl-carousel .owl-dots.disabled {
+    padding-top: 30px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.owl-dots {
+    text-align: center;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px;
+    display: none;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: white;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: 7%;
+    top: 43%;
+}
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: 7%;
+    top: 43%;
+}
+.owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: white;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border: 1px solid;
+    border-radius: 30px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+}
+.owlCarouselSingl.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #082c23;
+}
+.ourPartners .owlarousel .item img {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+.ourPartners .owlarousel {
+    padding: 0 150px;
+    margin-bottom: 100px;
+}
+.ourPartners .owlarousel .item .owlItemContent {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.ourPartners h2{
+    padding: 100px 0 50px;
+    text-align: center;
+    font-size: 48px;
+    color: #F9CF24;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+.owl-carousel .owl-nav button.owl-prev , .owl-carousel .owl-nav button.owl-next{
+    border-radius: 50%;
+    position: absolute;
+    left: -70px;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+    background: #DBDBDB;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-carousel .owl-nav button.owl-prev span , .owl-carousel .owl-nav button.owl-next span{
+    width: max-content;
+    height: max-content;
+    line-height: 30px;
+    display: block;
+    padding-bottom: 6px;
+}
+.owl-carousel .owl-nav button.owl-next{
+    border-radius: 50%;
+    position: absolute;
+    left: inherit;
+    right: -70px;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+    background: #DBDBDB;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #0568a7;
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+}
+.contactUs {
+    position: relative;
+}
+.contactUs .infoPart>img{
+    position: absolute;
+    right: -410px;
+    bottom: 45px;
+    width: 570px;
+
+}
+.contactUs .infoPart{
+    width: 62%;
+    height:700px;
+    background: #0568A7;
+    color: white;
+    padding: 50px 120px;
+    position: relative;
+    margin-bottom: 50px
+}
+.contactUs .infoPart h2{
+    font-size: 48px;
+    color: #F9CF24;
+    margin-bottom: 50px;
+}
+.contactUs .infoPart .infoItems{
+
+}
+.contactUs .infoPart .infoItems .item{
+
+}
+.contactUs .infoPart .infoItems .name{
+    font-size: 26px;
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
+.contactUs .infoPart .infoItems .imageAndContent{
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 27px;
+}
+.contactUs .infoPart .infoItems .imageAndContent .image{
+    width: 30px;
+    margin-right: 10px;
+}
+.contactUs .infoPart .infoItems .imageAndContent input {
+    width: 281px;
+    padding: 5px 5px 10px 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    color: white;
+    font-size: 20px;
+    margin-right: 14px;
+}
+.contactUs .infoPart .infoItems .imageAndContent input::placeholder {
+    color: white;
+}
+.contactUs .infoPart .infoItems .imageAndContent form {
+    display: flex;
+}
+.contactUs .infoPart .infoItems .imageAndContent button {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    width: 41px;
+    color: white;
+    font-size: 25px;
+}
+.contactUs .infoPart .infoItems .imageAndContent a{
+
+}
+.contactUs .formToContact{
+    position: absolute;
+    width: 46%;
+    right: 0;
+    height: 500px;
+    bottom: 70px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+}
+.formToContact {
+
+}
+.formToContact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 50px;
+}
+.formToContact input{
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #0568A7;
+    font-size: 17px;
+    padding: 0 20px;
+}
+.formToContact textarea{
+    height: 170px;
+    border-radius: 8px;
+    border: 1px solid #0568A7;
+    font-size: 17px;
+    padding:   20px;
+    resize: none;
+    font-family: arial
+}
+.formToContact input[type='submit']{
+    background: #0568A7;
+    color: white;
+}
+footer {
+    background: #F9CF24;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+footer .allRights{
+
+    display: flex;
+    justify-content: center;
+}
+footer .allRights p{
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 2px solid
+}
+footer .allRights p:last-child{
+    border-right: none;
+}
+footer .faqAndPrivacy{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+footer .faqAndPrivacy a{
+    padding-right: 15px;
+    margin-right: 15px;
+
+}
+footer .faqAndPrivacy a:first-child{
+    border-right: 2px solid
+}
+footer .socials{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+footer .socials div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.39);
+    margin: 10px;
+}
+footer .socials div a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+/*about page*/
+
+.notHome header>.myContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.notHome nav{
+    background: #F9CF24;
+}
+.notHome nav .myContainer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+.notHome.sction1 .searchaAndLang .search form {
+    width: 100%;
+    background: #f9cf24;
+    border-radius: 5px;
+    display: flex;
+}
+.notHome.sction1 {
+    position: relative;
+    height: max-content;
+
+
+}
+.notHome.sction1 .searchaAndLang .lang {
+    color: #f9cf24;
+}
+main.aboutPage>img{
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    left: -117px;
+    opacity: 0.5;
+}
+main.aboutPage{
+    background: url(../img/Group-13.png) no-repeat;
+    min-height: 50vh;
+    background-position: right;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    position: relative;
+}
+.aboutPage h2 {
+    font-size: 48px;
+    color: #0D6DAA;
+    margin-top: 50px;
+    background: white;
+    width: 80%;
+    font-family: montseratsemiBold
+}
+.aboutPage p {
+    column-count: 2;
+    width: 80%;
+    font-size: 16px;
+    line-height: 36px;
+    margin-top: 65px;
+    background: white;
+    column-gap: 80px;
+}
+
+/*careers Page*/
+
+main.carrersPage {
+    background: url(../img/careers/Group-13.png) no-repeat;
+    background-position: left top;
+    background-size: 20% 100%;
+}
+main.carrersPage h2{
+    font-size: 48px;
+    padding: 102px 0 40px;
+    color: #0D6DAA;
+}
+main.carrersPage .careersItem{
+    padding-bottom: 100px;
+}
+main.carrersPage .careersItem .item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    border: 1px solid #0D6DAA;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background: white;
+    color: #011726;
+}
+main.carrersPage .careersItem .item .title{
+    width: 40%;
+}
+main.carrersPage .careersItem .item .title p{
+    font-size: 20px;
+}
+main.carrersPage .careersItem .item .daTeAndAddress{
+    width: 40%;
+    display: flex;
+    color: #6C6C6D;
+}
+main.carrersPage .careersItem .item .daTeAndAddress>div{
+    margin-right: 21px;
+    font-size: 17px;
+}
+main.carrersPage .careersItem .item .daTeAndAddress i{
+    margin-right: 11px;
+    color: #D5D4D4
+}
+main.carrersPage .careersItem .item .daTeAndAddress span{
+
+}
+main.carrersPage .careersItem .item .apply{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+main.carrersPage .careersItem .item .apply button{
+    background: linear-gradient(45deg, #FED945, #F0A123);
+    border: 1px solid #F9CF24;
+    border-radius: 7px;
+    width: 160px;
+    height: 47px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+main.portfolio {
+
+}
+main.portfolio .filters{
+
+}
+main.portfolio .filters button{
+    border-radius: 7px;
+    border: 1px solid #0D6DAA;
+    color: #0D6DAA;
+    background: white;
+    padding: 5px 12px;
+    margin:  5px;
+    cursor: pointer;
+}
+main.portfolio .filters button.active{
+    color: white;
+    background: #0D6DAA;
+}
+main.portfolio .portfolioItems{
+    margin : 42px 0;
+}
+main.portfolio .portfolioItems .item{
+    display: flex;
+    justify-content: space-between;
+}
+main.portfolio .portfolioItems .item .logoAndLink{
+    background: #0568A7;
+    width: 49%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    color: white;
+    position: relative;
+    padding-bottom: 50px;
+}
+main.portfolio .portfolioItems .item .logoAndLink a{
+    position: absolute;
+    bottom: 15px;
+    width: 50%;
+    text-align: center;
+    left: 25%;
+}
+main.portfolio .portfolioItems .item .logoAndLink a span{
+    margin-right:   10px
+}
+main.portfolio .portfolioItems .item .logoAndLink>img{
+    max-height: 150px;
+    width: auto;
+    max-width: 90%;
+}
+main.portfolio .portfolioItems .item .itemImageBackground{
+    width: 49%;
+    height: 330px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.pagination button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #F9CF24;
+    color: #A1A1A1;
+    font-size: 25px;
+    margin: 5px;
+}
+.pagination button.nextPrev{
+    width: max-content;
+    border: none;
+    font-size: 22px;
+}
+.pagination button.active{
+    background:   rgba(249, 207, 36, 0.39)
+}
+
+/*apply for job*/
+
+.applyedContent {
+    display: none;
+    position: relative;
+}
+.applyedContent ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(30, 30, 35, 0.5);
+    line-height: 35px;
+}
+.applyedContent ul li span{
+    color: #0D6DAA;
+    margin-right: 10px;
+}
+.applyedContent p.title{
+    color: #464646;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+.applyedContent p.text{
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+    color: rgba(30, 30, 35, 0.5)
+}
+.applyedContent .description{
+
+}
+.applyedContent .description{
+
+}
+.applyedContent .qualifications{
+
+}
+.applyedContent .applyForJobForm{
+
+}
+.applyedContent .inputs{
+    width: 48%;
+}
+.applyedContent .applyForJobForm form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.applyedContent .applyForJobForm form .itemInp{
+    display: flex;
+    margin-bottom: 28px;
+    flex-direction: column;
+}
+.applyedContent .applyForJobForm form label{
+    line-height: 25px;
+}
+.applyedContent .applyForJobForm form textarea::placeholder,
+.applyedContent .applyForJobForm form input::placeholder {
+    color: #ACACAC;
+    font-size: 16px;
+}
+.applyedContent .applyForJobForm form textarea{
+    border: 1px solid rgba(13, 109, 170, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    height: 142px;
+    resize: none;
+}
+.applyedContent button{
+    background: linear-gradient(45deg, #FED945, #F0A123);
+    border: 1px solid #F9CF24;
+    border-radius: 7px;
+    width: 160px;
+    height: 47px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.applyedContent .applyForJobForm form input{
+    border: 1px solid rgba(13, 109, 170, 0.5);
+    border-radius: 5px;
+    height: 44px;
+    padding:0 10px;
+}
+.applyedContent .applyForJobForm form input[type='file']{
+
+}
+.applyedContent .messages {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.applyedContent .applyForJobForm form .itemInp.cvFile input{
+    border: none;
+    width: 0;
+    height: 0;
+    padding:0;
+    opacity: 0;
+}
+.applyedContent .applyForJobForm form .itemInp.cvFile {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border: 1px solid rgba(13, 109, 170, 0.5);
+    border-radius: 5px;
+    height: 44px;
+    align-items: center;
+    max-width: 430px;
+}
+.applyedContent .applyForJobForm form .itemInp.cvFile label{
+    background: rgba(13, 109, 170, 0.34);
+    height: 100%;
+    border-radius: 5px;
+    width: 65%;
+    color: #6A6A71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.applyedContent .applyForJobForm form .itemInp.cvFile span{
+    color: rgba(106, 106, 113, 0.87);
+    width:35%;
+    text-align: center;
+}
+.closeOPened {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #f2aa29;
+}
+
+.dropdown2  ,.dropdownForCheckWorkers {
+    width: 48%;
+    display: inline-block;
+    background-color: #fff;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #474747;
+    height: 45px;
+    text-align: left;
+    border: 1px solid #0568A7;
+    border-radius: 8px;
+    margin-bottom:  5px;
+    align-items: center;
+    padding: 2px;
+    outline: none;
+}
+.dropdown2 .select , .dropdownForCheckWorkers  .select{
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+.filters {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+main.service .dropdown2 .select >span.icon ,main.service.dropdownForCheckWorkers .select >span.icon {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+main.service .dropdown:hover, main.service .dropdownForCheckWorkers:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+main.service .dropdown:active,main.service .dropdownForCheckWorkers:active {
+    background-color: #f8f8f8
+}
+main.service .dropdownForCheckWorkers.active:hover,
+main.service .dropdownForCheckWorkers.active,
+main.service .dropdown.active:hover,
+main.service .dropdown.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 5px 5px 0 0;
+    background-color: #f8f8f8
+}
+main.service .dropdown.active .select > span.icon,
+main.service .dropdownForCheckWorkers.active .select > span.icon {
+    transform: rotate(-90deg)
+}
+main.service .dropdown2 .dropdown-menu , main.service .dropdownForCheckWorkers .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100.5%;
+    left: -1px;
+    right: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9;
+    border-bottom-left-radius: 8px;
+    border: 1px solid #0568a7;
+    border-top: none;
+    border-bottom-right-radius: 8px;
+}
+main.service .dropdown2 .dropdown-menu li ,main.service .dropdownForCheckWorkers .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+}
+main.service .dropdown2 .dropdown-menu ,main.service .dropdownForCheckWorkers .dropdown-menu{
+    padding: 0;
+    list-style: none
+}
+main.service .dropdown2 .dropdown-menu li:hover
+,main.service .dropdownForCheckWorkers  .dropdown-menu li:hover{
+    background-color: #f2f2f2
+}
+main.service .dropdown2 .dropdown-menu li:active ,
+main.service .dropdownForCheckWorkers  .dropdown-menu li:active{
+    background-color: #e2e2e2
+}
+main.service .dropdownForCheckWorkers input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main.service .dropdownForCheckWorkers label {
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+main.service  .dropdownForCheckWorkers li{
+    display: flex;
+    align-items: center;
+}
+main.service .user_text{
+    overflow: hidden;
+    height: 65px;
+}
+main.service .blueBackground{
+    background: #0568A7;
+    width: 40%;
+    position: absolute;
+    height: 600px;
+    left: 0;
+    z-index: -1;
+    bottom: 0;
+    top: 0;
+}
+main.service .titleOfService:before{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #F9CF24;
+    left: -20px;
+    top: 25px;
+}
+main.service .titleOfService{
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #F9CF24;
+    position: relative;
+    padding-left: 10px;
+    width: 100%;
+}
+main.service .applyForService{
+    width: 70%;
+    background: white;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    padding: 14px 33px;
+    height: 500px;
+    margin-top: 0px;
+}
+main.service .applyForService > img{
+    position: absolute;
+    left: -80px;
+    bottom: -4px;
+    z-index: -1;
+    width: 500px;
+}
+main.service .applyForService form{
+
+}
+main.service .item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main.service .applyForService form>p{
+    font-size: 26px;
+    color: #0568A7;
+    margin: 10px;
+}
+main.service .applyForService form input{
+    border: 1px solid #0568A7;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    height: 45px;
+    width: 48%;
+}
+main.service .applyForService form label{
+    font-size: 26px;
+    color: #0568A7;
+    margin: 10px;
+}
+main.service .applyForService form textarea{
+    border: 1px solid #0568A7;
+    border-radius: 8px;
+    height: 160px;
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+main.service .applyForService form button{
+    border: 1px solid #0568A7;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #0568A7;
+    height: 45px;
+    width: 48%;
+    color: white;
+    font-size: 18px;
+}
+main.service .applyForService form{
+
+}
+main.service .myContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+main.service{
+    margin: 68px 0 29px;
+    position: relative;
+    height: 700px;
+}
+.itemTextarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hide{
+    display: none;
+}
+#breadcrumb{
+    width: 100%;
+    border: 1px solid #07555E ;
+    margin-bottom: 20px;
+}
+.add_div{
+    display: flex;
+    margin-top: 10px;
+}

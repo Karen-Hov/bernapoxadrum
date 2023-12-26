@@ -1,0 +1,327 @@
+@media screen and (max-width: 1780px){
+	.toursCarousel .owl-carousel .owlItemContent .image, .toursPage .owlItemContent .image{
+		width: 100%;
+		height: 470px;
+	}
+	.toursCarousel .owl-carousel .item, .toursPage .item {
+           width: 96%;
+    margin: 2%;
+	}
+	.join .backgroundBlue {
+	    background: #2A8189;
+	    width: 400px;
+	}
+
+	.firstSectionContent h1 {
+
+	    font-size: 48px;
+	    margin-left: 40px;
+
+	}
+	.firstSectionContent .searchAndContacts {
+	    width: 1000px;
+	}
+	.countsOfAnalitics .items .item .itemCount{
+		    height: 330px;
+		        font-size: 150px;
+	}
+	.countsOfAnalitics .items .item .itemCount .line {
+		    top: 177px;
+	}
+	.countsOfAnalitics .items {
+	    width: 1000px;
+	}
+	.countsOfAnalitics {
+	    bottom: -155px;
+	}
+	div.title {
+		font-size: 25px
+	}
+	div.title p.big {
+	    font-size: 100px;
+	    line-height: 95px;
+	}
+	.zepline .content .context .desc {
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+	.zepline .content .context .readMore,
+	 .donation .formAndContInfo form button,
+	 .feedback .addFeedback button {
+	    height: 54px;
+	    font-size: 18px;
+	}
+	.donation .myContainer {
+	    max-width: 1000px;
+	}
+	.donation .formAndContInfo form .inputs input{
+	    height: 54px;
+	    margin-bottom: 40px;
+	    width: 48%;
+	}
+	.donation .myContainer {
+	    max-width: 950px;
+	}
+	.feedback.toursCarousel .owl-carousel .item {
+	    width: 96%;
+	    margin: 2%;
+	}
+	.owl-theme .owl-dots .owl-dot span {
+	    width: 20px;
+	    height: 20px;
+	}
+	.donation>img {
+	    top: 5%;
+	    height: 90%;
+	}
+    .toursPage .datapicker label input , .toursPage .filters .dropdown2 , .toursPage .datapicker {
+        font-size: 20px;
+        height: auto;
+    }
+    .toursCarousel .owl-carousel .owlItemContent .image, .toursPage .owlItemContent .image {
+        height: 400px;
+    }
+    .toursCarousel .owl-carousel .owlItemContent .info, .toursPage .owlItemContent .info {
+        padding: 10px;
+    }
+    .includes .items .item .first , .includes .items .item .second{
+        width: 50%;
+        font-size: 16px;
+    }
+    .includes .items .item .first .text{
+        font-size: 16px;
+    }
+    .includes .items .item .bullet {
+        width: 10px;
+        height: 10px;
+        background: #5E9DA5;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    header .logo img {
+        width: 200px;
+    }
+    nav ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+	.feedback p.feedback {
+	    font-size: 16px;
+	}
+	div.title p.big {
+	    font-size: 70px;
+	    line-height: 65px;
+	}
+	.feedback p.nameSurname {
+	    margin-bottom: 21px;
+	    font-size: 31px;
+	}
+	.donation .myContainer {
+	    max-width: 840px;
+	}
+	.donation .formAndContInfo form .inputs , .donation .formAndContInfo form .check {
+	    width: 100%;
+	    margin-bottom: 10px;
+    }
+    .donation .myContainer>p {
+
+	    font-size: 17px;
+	    line-height: 24px;
+
+	}
+	.join .infoPart .item a.info {
+
+	    font-size: 24px;
+	    line-height: 34px;
+	}
+	.join .infoPart .item {
+	    margin-bottom: 28px;
+	}
+	div.join {
+		    height: 610px;
+		    padding: 50px 40px;
+
+	}
+	.join .formAndContInfo form input {
+
+    height: 51px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+	.join .joinTitle .joinText {
+	    padding-left: 40px;
+	    width: 100%;
+	    color: #D4B269;
+	    font-size: 25px;
+	}
+	.join .joinTitle .join {
+    font-size: 105px;
+    }
+    .toursCarousel .owl-carousel .owlItemContent .image, .toursPage .owlItemContent .image {
+        height: 300px;
+    }
+    .toursPage .datapicker label input, .toursPage .filters .dropdown2, .toursPage .datapicker {
+        font-size: 16px;
+
+    }
+    .dropdown2 .select >span.icon, .dropdownForCheckWorkers .select >span.icon{
+        margin-top: 0;
+    }
+    .infoAboutTour .desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .infoAboutTour .date {
+        font-size: 21px;
+
+    }
+    .infoAboutTour .days {
+        font-size: 18px;}
+    .infoAboutTour .title {
+
+        font-size: 31px;
+        margin: 20px 0 10px;
+    }
+    .infoAboutTour .bookNow{
+        height: 50px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .toursPage .items .item {
+        width: 48%;
+        margin: 1%;
+
+    }
+    .toursPage .datapicker    , .toursPage .filters .dropdown2, .toursPage .datapicker {
+        height: 48px;
+    }
+    .toursPage .datapicker  , .toursPage .filters .dropdown2, .toursPage .datapicker {
+        font-size: 16px;
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    header .logo img {
+        width: 150px;
+    }
+    .chooseValute >div a{
+        font-size: 8px;
+    }
+    .lang img , .chooseValute>div{
+        width: 20px;
+        height: 20px;
+    }
+    .items.hotel .item .image {
+        height: 250px;
+        width: 100%;
+
+    }
+    .items.hotel .item .info {
+        width: 100%;}
+    .items.hotel .item {
+
+        flex-wrap: wrap;
+
+    }
+    .items.hotel .item .secondPart .startingPrice {
+
+        font-size: 22px !important;
+
+    }
+
+}
+@media screen and (max-width: 980px) {
+.layout-fixed .main-sidebar {
+
+    display: none;
+}
+
+body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+    transition: margin-left .3s ease-in-out;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+}
+@media screen and (max-width: 768px) {
+
+    .toursPage .items .item {
+        width: 80%;
+        margin: 20px 0;
+
+    }
+    .toursPage .items {
+
+        justify-content: center;
+    }
+    body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
+        transition: margin-left .3s ease-in-out;
+        padding-left: 0px !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .toursPage .datapicker  , .toursPage .filters .dropdown2, .toursPage .datapicker, .dropdownForCheckWorkers {
+        height: 48px;
+        width: 100%;
+    }
+    .filters{
+        justify-content: center;
+    }
+    .items.hotel .item .secondPart .startingPrice {
+        font-size: 15px !important;
+        width: 100%;
+    }
+    .reception_dashboard>a {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .reception_dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .secondPart button {
+        background: #07555e;
+        color: white;
+        margin: 1px;
+        height: 31px;
+        border: none;
+        width: 140px;
+        font-size: 12px;
+    }
+    .items.hotel .item .info {
+
+        padding: 5px;
+
+    }
+    .hotel .secondPart {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .absolutedSpanPrice {
+        position: relative;
+        width: 100%;
+        color: #D4B269;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .items.hotel .item .title {
+        font-size: 24px;
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.hide{
+    display: none;
+}

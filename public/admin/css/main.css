@@ -1,0 +1,153 @@
+form>.card-body {
+    display: none;
+}
+form>.active {
+    display: block;
+}
+.messag_email{
+    display: none!important;
+}
+.image_size{
+    width: 100px;
+    height: 100px;
+}
+#tab_0 .card-body.ru {
+    display: none;
+}
+#tab_0 .card-body.en {
+    display: none;
+}
+#tab_1 .card-body.hy {
+    display: none;
+}
+#tab_1 .card-body.en {
+    display: none;
+}
+#tab_2 .card-body.hy {
+    display: none;
+}
+#tab_2 .card-body.ru {
+    display: none;
+}
+
+.loginlaravel {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.loginlaravel input[type="checkbox"] {
+    width: max-content;
+}
+.loginlaravel .card-header p {
+    margin: 10px auto;
+}
+.loginlaravel .card-header {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.loginlaravel button {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    color: #012930;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    cursor: pointer;}
+.loginlaravel input{
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #0b2e13;
+    border-radius: 3px;
+    width: 100%;
+    margin: 5px 0 15px 0;
+    outline: none;
+}
+div#app form {
+    min-width: 300px;
+}
+div#app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.card .card-body {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+div.card {
+    padding: 20px;
+    background: #012930;
+    color: white;
+    width: 80%;
+    min-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 0 20px #01293070;
+}
+.loginlaravel .card-header  img {
+    width: 200px;
+}
+.loginlaravel .card-header {
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: 40%;
+    min-width: 300px;
+}
+.controls input[type="date"] {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+.controls textarea {
+    margin-bottom: 0px;
+    height: 160px;
+    width: 100%;
+    border-radius: 3px;
+    resize: none;
+    margin-top: 10px;
+}
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.delimg{
+    display: none;
+}
+.card.notGreen {
+    background: white;
+    margin-top: 10px;
+    box-shadow: none;
+    color: #012930;
+    width: 100%;
+}
+.dataTables_wrapper.dt-bootstrap4.no-footer {
+    width: 100%;
+}
+
+.brand-link .brand-image.elevation-3 {
+    box-shadow: none !important;
+}
+
+
+div.card .note-editor{
+    background-color: #ffffff ;
+    width: 100%;
+}
+
+.block_type{
+    display:none;
+}
+.hide{
+     display: none;
+ }
