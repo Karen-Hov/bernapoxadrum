@@ -33,14 +33,13 @@ class Translate extends Model
     public static function storeTranslate($request, $page_Id) : bool
     {
 //        dump($page_Id);
-//        dd($request->all(),$request->method(),$page_Id);
         foreach (config('lang') as $lang) {
             $tableT = new self();
             if ($request->method() == 'PUT') {
                 $tableT
                     = self::where('page_id', $page_Id)
                     ->where('type', $request['translate'])
-                    ->where('code',  $lang)
+                    ->where('code',  $lang['code'])
                     ->first();
             } else {
                 $tableT->page_id = $page_Id;

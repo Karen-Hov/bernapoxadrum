@@ -59,7 +59,7 @@
                 <li class="nav-item has-treeview  @if(strpos(url()->current(),'menu')!=false) active menu-open @endif ">
                     <a href="" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>                        <p>
-                            Մենու
+                            Ծառայություններ
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -70,7 +70,7 @@
                                class="nav-link  @if(strpos(url()->current(),'my_admin/menu')!== false)) active @endif">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
-                                    Մենու
+                                    Ծառայություններ
                                 </p>
                             </a>
                         </li>
@@ -82,7 +82,7 @@
                                class="nav-link  @if(strpos(url()->current(),'submenu')!== false)) active @endif">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
-                                    Ենթամենու
+                                    ԵնթաԾառայություններ
                                 </p>
                             </a>
                         </li>

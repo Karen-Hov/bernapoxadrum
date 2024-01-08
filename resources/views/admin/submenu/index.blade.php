@@ -31,7 +31,8 @@
                             <tr>
                                 <th>#</th>
                                 <th>Վերնագիր</th>
-                                <th>Մենու</th>
+                                <th>Ծառայություններ</th>
+                                <th>Գին</th>
                                 <th>Գործողություն</th>
                             </tr>
                             </thead>
@@ -42,6 +43,7 @@
                                 <td>{{$item->id}}</td>
                                 <td>{{$item->translate[0]->title}}</td>
                                 <td> {{isset($item->menu[0]->translate[0]->title)?Str::limit($item->menu[0]->translate[0]->title,50):''}}</td>
+                                <td>{{$item->price}}</td>
                                 <td class="project-actions text-right">
 
                                     <a class="btn btn-info btn-sm"
@@ -101,7 +103,7 @@
                 "info": true,
                 "autoWidth": true,
                 "responsive": true,
-                "order":[[0,'desc']]
+                "order":[[0,'asc']]
             });
             $('#example2_1').DataTable({
                 "paging": true,
@@ -111,7 +113,7 @@
                 "info": true,
                 "autoWidth": true,
                 "responsive": true,
-                "order":[[0,'desc']]
+                "order":[[0,'asc']]
             });
         });
     </script>

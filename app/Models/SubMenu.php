@@ -47,10 +47,12 @@ class SubMenu extends Model
     {
         DB::transaction(function() use($request, $submenu) {
             $submenu->menu_id = $request['cat'];
+            $submenu->price = $request['price'];
+//            dd($request->all(), $submenu);
+
             $submenu->save();
             Translate::storeTranslate($request, $submenu->id);
         });
-//        dd($request->all(), $submenu);
 //        DB::transaction(function() use($request, $submenu) {
 //            $submenu->menu_id = $request['cat'];
 //            $submenu->save();

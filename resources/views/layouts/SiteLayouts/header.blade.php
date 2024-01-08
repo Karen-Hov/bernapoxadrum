@@ -120,7 +120,11 @@
                             <div class="searchd"><i class="fa fa-search"></i>
                             </div>
                             <ul class="dl-menu">
-                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Գլխավոր</a></li>
+{{--                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Գլխավոր</a></li>--}}
+                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">Բեռնակիրներ</a></li>
+                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">Գները</a></li>
+                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Թափուր աշխատատեղեր</a></li>
+                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Ընկերություն</a></li>
                                 @if(isset($category) && !$category->isEmpty())
                                 @foreach($category as $cat)
 {{--                                        <li class="parent megamenu"><a href="#" class="effect_nav">{{$cat->translate[0]->title}}</a>--}}
@@ -490,7 +494,7 @@
 {{--                                        </li>--}}
 {{--                                    </ul>--}}
 {{--                                </li>--}}
-                                <li class="parent"><a href="{{asset(app()->getLocale().'/contact')}}" class="effect_nav">Contact</a>
+                                <li class="parent"><a href="{{asset(app()->getLocale().'/contact')}}" class="effect_nav">Կապ մեզ հետ</a>
                                 </li>
                             </ul>
                         </div>

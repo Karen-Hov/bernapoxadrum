@@ -111,6 +111,23 @@
                                     @endforeach
                         @endforeach
                     </div>
+                            <div class="tab-pane fade show active "
+                                 id="tab_"
+                                 role="tabpanel">
+
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label>Գին *</label>
+                                        <input type="number" name="price" class="form-control"
+                                               value="{{isset($submenu->price)?$submenu->price:old('price')}}">
+                                        @if ($errors->has('price'))
+                                            <span class="valid-error">{{ $errors->first('price') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+
+                            </div>
                         {{--                            </div>--}}
                             <input type="hidden" name="translate" value="submenu">
                         <div class="card-body">

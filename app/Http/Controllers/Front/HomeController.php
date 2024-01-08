@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index(){
 
-        
+
 
         return view('front.index');
     }
@@ -17,15 +17,20 @@ class HomeController extends Controller
 
 
 
+    public function service(){
+        return view('front.service');
+    }
+
+
     public function blog(){
-        return view('front.bloge');
+        return view('front.blog');
     }
     public function blog_singl(){
-        return view('front.blog_singl');
+        return view('front.blog_singl.blade.php');
     }
 
     public function contact(){
-        return view('front.contact');
+        return view('front.contact.blade.php');
     }
     public function sport(){
         return view('front.sport');

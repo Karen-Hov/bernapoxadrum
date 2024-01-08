@@ -57,6 +57,9 @@ Route::get('uploadimg', [ImageController::class,'uploadimg']);
 Route::group(['prefix' => '{locale}', 'middleware' => 'lang', 'as'=> 'site'], function () {
 
     Route::get('/', [HomeController::class,'index']);
+    Route::get('/service', [HomeController::class,'service']);
+
+
     Route::get('/blog', [HomeController::class,'blog']);
     Route::get('/blog_single', [HomeController::class,'blog_single']);
     Route::get('/contact', [HomeController::class,'contact']);

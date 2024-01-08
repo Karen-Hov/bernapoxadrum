@@ -1,20 +1,20 @@
 /*-------------------------------------
-    
-	Author: Webstrot 
+
+	Author: Webstrot
 	Copyright © 2019
-	
+
 ---------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     1. BODY
 	2. CUSTOM CSS / A
 	3. PRELOADER
 	4. ne_top_header_main_wrapper
 	5. ne_ts_main_section_wrapper
 	6. ss_addver_slider_wrapper
-	7. ne_recent_news_main_wrapper 
+	7. ne_recent_news_main_wrapper
 	8. ne_busness_main_slider_wrapper
 	9. neww_businees_slider_wrapper
 	10. ne_sport_slider_wrapper
@@ -142,7 +142,7 @@ ul{
 .ne_top_about_btn{
 	float:left;
 	width:auto;
-	    
+
 }
 .ne_top_about_btn a{
 	font-size:14px;
@@ -509,7 +509,7 @@ body.active #mobile-nav {
 }
 .dl-menuwrapper button { background: #282744;    -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px; 
+    border-radius: 10px;
 	margin-right:10px;}
 .dl-menuwrapper ul { background: #282845; }
 .dl-menuwrapper button.dl-active,.dl-menuwrapper button:hover{
@@ -1296,7 +1296,7 @@ width:100%;
 	position:absolute;
 	top:45%;
 	float:left;
-	width:100%;	
+	width:100%;
 }
 .carousel-nevigation > .prev{
 	left:-138px;
@@ -1358,7 +1358,7 @@ width:100%;
     -ms-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
-} 
+}
 .lr_thumbs_slide{
 	float:left;
 	width:100%;
@@ -1386,7 +1386,7 @@ width:100%;
     position: absolute;
     right: -20px;
     bottom: 0;
-	
+
 }
 .lr_banner_content_inner_wrapper h2:before{
 	content: '';
@@ -1395,7 +1395,7 @@ width:100%;
     position: absolute;
     right: -20px;
     bottom: 15px;
-	
+
 }
 .lr_banner_content_inner_wrapper h3{
 	font-size:30px;
@@ -1742,7 +1742,7 @@ width:100%;
 	display:inline-block;
 	font-family: 'Montserrat', sans-serif;
 	text-transform:uppercase;
-	padding: 10px 20px;
+	padding: 10px 14px;
 	position:absolute;
 	top: 25px;
     left: -160px;
@@ -1775,7 +1775,7 @@ width:100%;
     position: absolute;
     right: -20px;
     bottom: 0;
-	
+
 }
 .ne_re_left_img_main_wrapper h2:before{
 	content: '';
@@ -1784,7 +1784,7 @@ width:100%;
     position: absolute;
     right: -20px;
     bottom: 15px;
-	
+
 }
 .ne_re_left_bottom_main_wrapper{
 	float:left;
@@ -2217,7 +2217,7 @@ width:100%;
     position: absolute;
     right: -20px;
     bottom: 0;
-	
+
 }
 .ne_gt_left_img_main_wrapper h2:before{
 	content: '';
@@ -2226,7 +2226,7 @@ width:100%;
     position: absolute;
     right: -20px;
     bottom: 15px;
-	
+
 }
 .ne_gt_left_top_main_wrapper1{
 	margin-top:60px;
@@ -2275,7 +2275,7 @@ width:100%;
 }
 .pagination > li a i:before{
 	margin-left:0;
-} 
+}
 .pagination > li:last-child > a{
 	width:30px;
 	height:30px;
@@ -2289,7 +2289,7 @@ width:100%;
     border-radius: 3px;
 	font-size: 16px;
     line-height: 27px;
-}	
+}
 .pagination > li:first-child:hover > a{
 	background:#3dd0d8;
 	border:1px solid transparent;
@@ -2421,7 +2421,7 @@ width:100%;
     position: absolute;
     right: -20px;
     bottom: 0;
-	
+
 }
 .ne_wn_img_main_wrapper h2:before{
 	content: '';
@@ -2430,7 +2430,7 @@ width:100%;
     position: absolute;
     right: -20px;
     bottom: 15px;
-	
+
 }
 .ne_wn_social_inner_wrapper h3{
 	font-size:22px;
@@ -3850,7 +3850,7 @@ width:100%;
 	float:left;
 }
 #filter li a{
-	padding: 15px 20px;	
+	padding: 15px 20px;
 }
 #filter li:last-child a{
 	padding-right:0;
@@ -4010,8 +4010,8 @@ width:100%;
 	margin-top:80px;
 }
 #map{
-	width:100%; 
-	float:left; 
+	width:100%;
+	float:left;
 	height:560px;
 }
 .ne_map_content_wrapper{
@@ -4243,7 +4243,7 @@ width:100%;
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -moz-transition: all 0.5s;
-    transition: all 0.5s;	
+    transition: all 0.5s;
 }
 .ne_contact_map_slider_wrapper{
 	margin-top:60px;
@@ -4992,7 +4992,7 @@ width:100%;
 .login_wrapper .form-control:focus {
 	color: #999;
 	background-color: fafafa;
-	border: 1px solid #3dd0d8  !important;	
+	border: 1px solid #3dd0d8  !important;
 }
 .login_wrapper  .formsix-pos,.formsix-e{
 	position: relative;

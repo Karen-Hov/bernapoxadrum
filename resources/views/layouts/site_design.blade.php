@@ -33,6 +33,13 @@
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/magnific-popup.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/responsive.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{asset('front/css/template.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('front/css/mod.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/uikit.min.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/media.css?v=2.5')}}">
+
+
     <!-- favicon links -->
 {{--    <link rel="shortcut icon" type="image/png" href="{{asset('front/images/header/favicon.ico')}}">--}}
 {{--    <script src='../../../google_analytics_auto.js'></script>--}}
