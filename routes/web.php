@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\SubMenuController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Front\HomeController;
+use App\Http\Controllers\Front\ServiceController;
 use App\Http\Controllers\HomeController as HomeAdminController;
 use App\Http\Controllers\LangController;
 use Illuminate\Support\Facades\Auth;
@@ -57,7 +58,7 @@ Route::get('uploadimg', [ImageController::class,'uploadimg']);
 Route::group(['prefix' => '{locale}', 'middleware' => 'lang', 'as'=> 'site'], function () {
 
     Route::get('/', [HomeController::class,'index']);
-    Route::get('/service', [HomeController::class,'service']);
+    Route::get('/service/{id?}', [ServiceController::class,'index']);
 
 
     Route::get('/blog', [HomeController::class,'blog']);

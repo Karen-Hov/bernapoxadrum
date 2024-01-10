@@ -605,7 +605,7 @@ html:not(.uk-touch) .uk-button-primary.button-light:hover {
 
 .consultating-block {
     margin-top: 85px;
-    background: #f6f6f6 url(../images/img/consultating_bg.png) center 96% no-repeat;
+    background: #f6f6f6 url(../images/consultating_bg.png) center 96% no-repeat;
     position: relative;
 }
 

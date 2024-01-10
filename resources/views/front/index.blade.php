@@ -61,7 +61,7 @@
                                                             <h2>Грузчик</h2>
                                                         </div>
                                                         <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
-                                                            <h3><a href="#">Грузчик</a></h3>
+                                                            <h3><a href="{{asset(app()->getLocale().'/service')}}">Грузчик</a></h3>
                                                             <ul class="ne_re_social1_wrapper">
                                                                 <li data-animation="animated fadeInLeft"><a href="#">1000 դրամ </a>
                                                             </li>
@@ -76,7 +76,7 @@
                                                             <h2>Такелажник</h2>
                                                         </div>
                                                         <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
-                                                            <h3><a href="#">Такелажник</a></h3>
+                                                            <h3><a href="{{asset(app()->getLocale().'/service')}}">Такелажник</a></h3>
                                                             <ul class="ne_re_social1_wrapper">
                                                                 <li data-animation="animated fadeInLeft"><a href="#">2000 դրամ</a>
                                                                 </li>
@@ -91,7 +91,7 @@
                                                             <h2>экспедитор</h2>
                                                         </div>
                                                         <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
-                                                            <h3><a href="#">Грузчик-экспедитор</a></h3>
+                                                            <h3><a href="{{asset(app()->getLocale().'/service')}}">Грузчик-экспедитор</a></h3>
                                                             <ul class="ne_re_social1_wrapper">
                                                                 <li data-animation="animated fadeInLeft"><a href="#">3000 դրամ</a>
                                                                 </li>
@@ -106,7 +106,7 @@
                                                             <h2>Разнорабочий</h2>
                                                         </div>
                                                         <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
-                                                            <h3><a href="#">Разнорабочий</a></h3>
+                                                            <h3><a href="{{asset(app()->getLocale().'/service')}}">Разнорабочий</a></h3>
                                                             <ul class="ne_re_social1_wrapper">
                                                                 <li data-animation="animated fadeInLeft"><a href="#">4000 դրամ</a>
                                                                 </li>
@@ -121,7 +121,7 @@
                                                             <h2>Фасовщик</h2>
                                                         </div>
                                                         <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
-                                                            <h3><a href="#">Фасовщик</a></h3>
+                                                            <h3><a href="{{asset(app()->getLocale().'/service')}}">Фасовщик</a></h3>
                                                             <ul class="ne_re_social1_wrapper">
                                                                 <li data-animation="animated fadeInLeft"><a href="#">5000 դրամ</a>
                                                                 </li>
@@ -287,7 +287,31 @@
             </div>
         </div>
     </div>
-
+    <div class="block-client-service">
+        <h3 class="uk-text-center title-header">Почему клиенты выбирают <br class="uk-visible-xlarge">Грузчиков-Cервис?</h3>
+        <div class="uk-grid">
+            <div class="uk-width-2-3 uk-width-medium-2-5 uk-width-large-1-3 uk-width-xlarge-1-2">
+                <div class="uk-grid">
+                    <div class="uk-width-4-7 uk-visible-xlarge">
+                        <div class="uk-panel-background"></div>
+                    </div>
+                    <div class="uk-width-1-1 uk-width-xlarge-3-7">
+                        <ul class="uk-list list-item">
+                            <li>Все рабочие — Граждане РФ</li>
+                            <li>Трезвые</li>
+                            <li>Без нецензурной лексики</li>
+                            <li>Без опозданий</li>
+                            <li>Низкие цены</li>
+                            <li>Без судимостей</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-3-3 uk-width-medium-3-5 uk-width-large-2-3 uk-width-xlarge-1-2">
+                <div class="uk-panel-background second"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- ne tranding slider End -->
 {{--    <div class="ss_addver_slider_wrapper">--}}
@@ -3408,46 +3432,78 @@
                     благодарности</a>
             </div>
         </div>
+
+        <div style="margin-top: 50px;" class="uk-container uk-container-center">
+            <p>Организация переезда это сложный&nbsp; и длительный процесс, который требует тщательной подготовки. Мы предлагаем услуги специалистов, а именно профессиональных грузчиков, которые в кратчайший срок произведут все необходимые работы, для быстрого переезда, по приемлемым ценам.<br>
+                Для дополнительного удобства, можно воспользоваться и другими услугами различного профиля. Из широкого спектра услуг, можно вызвать специалистов из различных областей: по демонтажным работам,клининга, уборки снега, вывоза мусора. Кроме того, мы гарантируем качественное выполнение всех работ и доступные цены.</p>
+
+        </div>
     </div>
 
     <!--main js file end-->
-    <div class="prs_patner_main_section_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="prs_pn_slider_wraper">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="prs_pn_img_wrapper">
-                                    <img src="{{asset('front/images/client_logo_01.png')}}" alt="patner_img">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prs_pn_img_wrapper">
-                                    <img src="{{asset('front/images/client_logo_02.png')}}" alt="patner_img">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prs_pn_img_wrapper">
-                                    <img src="{{asset('front/images/client_logo_03.png')}}" alt="patner_img">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prs_pn_img_wrapper">
-                                    <img src="{{asset('front/images/client_logo_04.png')}}" alt="patner_img">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prs_pn_img_wrapper">
-                                    <img src="{{asset('front/images/client_logo_05.png')}}" alt="patner_img">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prs_pn_img_wrapper">
-                                    <img src="{{asset('front/images/client_logo_06.png')}}" alt="patner_img">
-                                </div>
-                            </div>
+{{--    <div class="prs_patner_main_section_wrapper">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--}}
+{{--                    <div class="prs_pn_slider_wraper">--}}
+{{--                        <div class="owl-carousel owl-theme">--}}
+{{--                            <div class="item">--}}
+{{--                                <div class="prs_pn_img_wrapper">--}}
+{{--                                    <img src="{{asset('front/images/client_logo_01.png')}}" alt="patner_img">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="item">--}}
+{{--                                <div class="prs_pn_img_wrapper">--}}
+{{--                                    <img src="{{asset('front/images/client_logo_02.png')}}" alt="patner_img">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="item">--}}
+{{--                                <div class="prs_pn_img_wrapper">--}}
+{{--                                    <img src="{{asset('front/images/client_logo_03.png')}}" alt="patner_img">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="item">--}}
+{{--                                <div class="prs_pn_img_wrapper">--}}
+{{--                                    <img src="{{asset('front/images/client_logo_04.png')}}" alt="patner_img">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="item">--}}
+{{--                                <div class="prs_pn_img_wrapper">--}}
+{{--                                    <img src="{{asset('front/images/client_logo_05.png')}}" alt="patner_img">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="item">--}}
+{{--                                <div class="prs_pn_img_wrapper">--}}
+{{--                                    <img src="{{asset('front/images/client_logo_06.png')}}" alt="patner_img">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+
+    <div class="consultating-block">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid uk-grid-large-collapse">
+                <div class="uk-hidden-small uk-width-medium-1-2 uk-width-large-1-2 uk-width-xlarge-1-2 uk-text-right">
+                    <div class="block-girl"><img src="{{asset('front/images/consult_girl.png')}}" alt="Девушка консультант"></div>
+                </div>
+                <div class="uk-width-small-text-center uk-width-1-1 uk-width-medium-1-2 uk-width-large-1-2 uk-width-xlarge-1-2">
+                    <div class="panel-form-text uk-width-1-1 uk-width-medium-6-7 uk-width-large-6-7 uk-width-xlarge-6-7">
+                        <h4>Получите бесплатную <br class="uk-visible-xlarge">консультацию <span>за 30 секунд</span></h4>
+                        <p class="small-width">Позвоните нам прямо сейчас и узнайте все интересующие вас подробности.</p>
+                        <div class="panel-phone-contact">
+                            <p>с 8:00 до 21:00, пн - пт</p>
+                            <p class="phone-contact"><a href="tel:+55626212"> (55) 62-62-12</a></p>
                         </div>
+                        <form action="" class="uk-form">
+                            <div class="uk-form-row">
+{{--                                <input type="text" name="phone" id="phone" placeholder="(55) 62-62-12">--}}
+                                <button class="uk-button uk-button-secondary b-work" data-live="0" type="button">Заказать звонок</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

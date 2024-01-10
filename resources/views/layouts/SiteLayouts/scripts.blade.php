@@ -16,3 +16,5 @@
 <script src="{{asset('front/js/bit_timer.js')}}"></script>
 <script src="{{asset('front/js/weather.js')}}"></script>
 <script src="{{asset('front/js/custom.js')}}"></script>
+<script src="{{asset('front/js/main.js')}}"></script>
+<script src="{{asset('front/js/uikit.min.js')}}"></script>

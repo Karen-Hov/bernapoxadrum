@@ -8,7 +8,7 @@
 
 @section('content')
 
-
+{{--@dd($menus)--}}
 <div class="breadcrumbs-block">
     <div class="uk-container uk-container-center">
         <ul class="breadcrumbs-list">
@@ -23,19 +23,26 @@
         <div class="uk-grid">
             <div class="uk-width-1-4 uk-visible-xlarge">
                 <ul class="uk-nav uk-nav-side">
-                    <li class="uk-active"><a href="/price.html">Цены на услуги</a></li>
-                    <li class=""><a href="/flat_pereezd.html">Квартирный переезд</a></li>
-                    <li class=""><a href="/office_pereezd.html">Офисный переезд</a></li>
-                    <li class=""><a href="/dacha_pereezd.html">Дачный переезд</a></li>
-                    <li class=""><a href="/raznorabochie.html">Разнорабочие</a></li>
-                    <li class=""><a href="/uborka_i_clining.html">Уборка и клининг</a></li>
-                    <li class=""><a href="/demontazh.html">Упаковочные материалы</a></li>
-                    <li class=""><a href="/takelazh.html">Такелаж (свыше 100 кг)</a></li>
-                    <li class=""><a href="/vivoz_musora.html">Вывоз мусора</a></li>
-                    <li class=""><a href="/arenda_spectichniki.html">Грузовой транспорт и спецтехника</a></li>
+
+                    @foreach($menus as $menu)
+                        @if(isset($menu) && $menu && $menu->translate[0]->title)
+                            <li class=""><a href="{{asset(app()->getLocale().'/service/'.$menu->id)}}">{{$menu->translate[0]->title}}</a></li>
+                            @endif
+                    @endforeach
+{{--                    <li class="uk-active"><a href="/price.html">Цены на услуги</a></li>--}}
+{{--                    <li class=""><a href="/flat_pereezd.html">Квартирный переезд</a></li>--}}
+{{--                    <li class=""><a href="/office_pereezd.html">Офисный переезд</a></li>--}}
+{{--                    <li class=""><a href="/dacha_pereezd.html">Дачный переезд</a></li>--}}
+{{--                    <li class=""><a href="/raznorabochie.html">Разнорабочие</a></li>--}}
+{{--                    <li class=""><a href="/uborka_i_clining.html">Уборка и клининг</a></li>--}}
+{{--                    <li class=""><a href="/demontazh.html">Упаковочные материалы</a></li>--}}
+{{--                    <li class=""><a href="/takelazh.html">Такелаж (свыше 100 кг)</a></li>--}}
+{{--                    <li class=""><a href="/vivoz_musora.html">Вывоз мусора</a></li>--}}
+{{--                    <li class=""><a href="/arenda_spectichniki.html">Грузовой транспорт и спецтехника</a></li>--}}
 
                 </ul>
             </div>
+{{--            @dd($menus)--}}
             <div class="uk-width-1-1 uk-width-xlarge-3-4">
                 <ul id="switch-table" class="uk-switcher">
                     <li class="uk-active">
@@ -54,8 +61,11 @@
                             </tr>
                             </thead>
                             <tbody>
+                    @foreach($submenus as $submenu)
+                        @if(isset($submenu) && $submenu && $submenu->translate[0]->title)
+{{--                            <li class=""><a href="">{{$submenu->translate[0]->title}}</a></li>--}}
                             <tr>
-                                <td>Грузчик (стандартные работы)
+                                <td>{{$submenu->translate[0]->title}}
                                     <p class="uk-text-small"></p>
                                 </td>
                                 <td class="uk-text-center">от
@@ -63,107 +73,123 @@
 																											117
 																									</span>
                                 </td>
-                                <td class="uk-text-center">от <span>130</span></td>
+                                <td class="uk-text-center">от <span>{{$submenu->price}}</span></td>
                             </tr>
-                            <tr>
-                                <td>Газель 1.5 тонны 10м3
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											540
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>600</span></td>
-                            </tr>
-                            <tr>
-                                <td>Машина 5 тонн 32м3
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											990
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>1100</span></td>
-                            </tr>
-                            <tr>
-                                <td>Уборка влажная - за м2
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											36
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>40</span></td>
-                            </tr>
-                            <tr>
-                                <td>Вывоз мусора на свалку ТБО 1.5 тонны
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											1800
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>2000</span></td>
-                            </tr>
-                            <tr>
-                                <td>Такелажник (свыше 100 кг)
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											315
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>350</span></td>
-                            </tr>
-                            <tr>
-                                <td>Экспедитор
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											225
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>250</span></td>
-                            </tr>
-                            <tr>
-                                <td>Работник для земляных работ
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											225
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>250</span></td>
-                            </tr>
-                            <tr>
-                                <td>Упаковщик
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											198
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>220</span></td>
-                            </tr>
-                            <tr>
-                                <td>Подсобник
-                                    <p class="uk-text-small"></p>
-                                </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											198
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>220</span></td>
-                            </tr>
+
+                        @endif
+                    @endforeach
+
+
+{{--                            <tr>--}}
+{{--                                <td>Грузчик (стандартные работы)--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											117--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>130</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Газель 1.5 тонны 10м3--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											540--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>600</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Машина 5 тонн 32м3--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											990--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>1100</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Уборка влажная - за м2--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											36--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>40</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Вывоз мусора на свалку ТБО 1.5 тонны--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											1800--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>2000</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Такелажник (свыше 100 кг)--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											315--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>350</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Экспедитор--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											225--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>250</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Работник для земляных работ--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											225--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>250</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Упаковщик--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											198--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>220</span></td>--}}
+{{--                            </tr>--}}
+{{--                            <tr>--}}
+{{--                                <td>Подсобник--}}
+{{--                                    <p class="uk-text-small"></p>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от--}}
+{{--                                    <span>--}}
+{{--																											198--}}
+{{--																									</span>--}}
+{{--                                </td>--}}
+{{--                                <td class="uk-text-center">от <span>220</span></td>--}}
+{{--                            </tr>--}}
 
                             </tbody>
                         </table>
@@ -193,7 +219,7 @@
             data-uk-grid-margin="">
             <li class="uk-row-first">
                 <div class="panel-recheck">
-                    <img src="images/recheck_worker_01.jpg" alt="">
+                    <img src="{{asset('front/images/recheck_worker_01.jpg')}}" alt="">
                     <div class="desck-block-recheck uk-text-cetner">
                         <p class="name-recheck">Николай</p>
                         <p class="age-recheck">33 лет, грузчик</p>
@@ -206,7 +232,7 @@
             </li>
             <li>
                 <div class="panel-recheck">
-                    <img src="images/recheck_worker_02.jpg" alt="">
+                    <img src="{{asset('front/images/recheck_worker_02.jpg')}}" alt="">
                     <div class="desck-block-recheck uk-text-cetner">
                         <p class="name-recheck">Вячеслав</p>
                         <p class="age-recheck">29 лет, грузчик</p>
@@ -231,7 +257,7 @@
             </li>
             <li class="uk-visible-xlarge">
                 <div class="panel-recheck">
-                    <img src="images/recheck_worker_03.jpg" alt="">
+                    <img src="{{asset('front/images/recheck_worker_03.jpg')}}" alt="">
                     <div class="desck-block-recheck uk-text-cetner">
                         <p class="name-recheck">Семён</p>
                         <p class="age-recheck">29 лет, грузчик</p>
@@ -341,7 +367,7 @@
             </div>
         </div>
         <div class="uk-text-center uk-margin-large-top">
-            <a href="/achievments.html" class="uk-button uk-button-primary button-light button-round">Все
+            <a href="#" class="uk-button uk-button-primary button-light button-round">Все
                 благодарности</a>
         </div>
     </div>
@@ -364,7 +390,7 @@
                     </div>
                     <form action="" class="uk-form">
                         <div class="uk-form-row">
-                            <input type="text" name="phone" id="phone" placeholder="+7 (921) 234-56-78">
+                            <input type="text" name="phone" id="phone" placeholder="(55) 62-62-12">
                             <button class="uk-button uk-button-secondary b-work" data-live="0" type="button">Заказать
                                 звонок
                             </button>
@@ -383,21 +409,21 @@
 <script type="text/javascript" async=""
         src="https://www.googletagmanager.com/gtag/js?id=G-SJ2JHHPNYQ&amp;l=dataLayer&amp;cx=c"></script>
 <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
-<script src="js/jquery-1.12.4.min.js"></script>
-<!-- Uikit -->
-<script src="js/uikit.min.js"></script>
-<script src="js/sticky.min.js"></script>
-<script src="js/lightbox.min.js"></script>
-<script src="js/slideshow.min.js"></script>
-<script src="js/slideset.min.js"></script>
-<script src="js/accordion.min.js"></script>
-<!-- Plugins -->
-<script src="js/jquery.inputmask.bundle.min.js?v=2"></script>
-<script src="js/jquery.formstyler.min.js"></script>
-<script src="js/jquery.mmenu.all.js"></script>
-<script src="js/jquery.matchHeight.js"></script>
+{{--<script src="js/jquery-1.12.4.min.js"></script>--}}
+{{--<!-- Uikit -->--}}
+{{--<script src="js/uikit.min.js"></script>--}}
+{{--<script src="js/sticky.min.js"></script>--}}
+{{--<script src="js/lightbox.min.js"></script>--}}
+{{--<script src="js/slideshow.min.js"></script>--}}
+{{--<script src="js/slideset.min.js"></script>--}}
+{{--<script src="js/accordion.min.js"></script>--}}
+{{--<!-- Plugins -->--}}
+{{--<script src="js/jquery.inputmask.bundle.min.js?v=2"></script>--}}
+{{--<script src="js/jquery.formstyler.min.js"></script>--}}
+{{--<script src="js/jquery.mmenu.all.js"></script>--}}
+{{--<script src="js/jquery.matchHeight.js"></script>--}}
 <!-- Main -->
-<script src="js/main.js?v=3.4"></script>
+<script src="{{asset('front/js/main.js?v=1.1')}}"></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
