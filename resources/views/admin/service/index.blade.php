@@ -30,7 +30,6 @@
                             <thead>
                             <tr>
                                 <th>#</th>
-{{--                                <th>Ա․Ա․</th>--}}
                                 <th>Վերնագիր</th>
                                 <th>Նկար</th>
                                 <th>Գործողություն</th>
@@ -39,20 +38,11 @@
                             <tbody>
                             @if($service)
                                 @foreach($service as $item)
-{{--                                    @dd($item)--}}
                             <tr>
                                 <td>{{$item->id}}</td>
-{{--                                <td>{{date_format($item->created_at,'d-m-Y')}}</td>--}}
                                 <td style="width: 45%;">{{isset($item->translate[0]->title)?Str::limit($item->translate[0]->title,150):''}}</td>
                                 <td> <img class="image_size" src="{{isset($item->file)?asset('storage/service/small/'.$item->file):' - '}}" alt=""></td>
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-info btn-sm"
-                                       href="{{route('services.show',$item->id)}}">
-                                        <i class="fas fa-pencil-alt">
-                                        </i>
-                                        Դիմողներ
-                                    </a>
-
                                     <a class="btn btn-info btn-sm"
                                        href="{{route('services.edit',$item->id)}}">
                                         <i class="fas fa-pencil-alt">

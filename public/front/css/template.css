@@ -500,7 +500,7 @@ p {
 }
 
 .block-client-service .title-header {
-    margin: 73px 0;
+    /*margin: 73px 0;*/
 }
 
 .uk-list.list-item li {
@@ -1392,7 +1392,7 @@ p.modal-footer {
 }
 
 .breadcrumbs-block {
-    padding-top: 70px;
+    padding-top: 240px;
 }
 
 .breadcrumbs-list {

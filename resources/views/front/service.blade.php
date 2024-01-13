@@ -12,7 +12,7 @@
 <div class="breadcrumbs-block">
     <div class="uk-container uk-container-center">
         <ul class="breadcrumbs-list">
-            <li><a href="/">Главная </a></li>
+            <li><a href="{{url(app()->getLocale())}}">@lang('menu.home')</a></li>
             <li><a href="/price.html">Цены на услуги</a></li>
         </ul>
         <h1 class="title-main">Цены на услуги <br>в Кемерово</h1>
@@ -25,21 +25,10 @@
                 <ul class="uk-nav uk-nav-side">
 
                     @foreach($menus as $menu)
-                        @if(isset($menu) && $menu && $menu->translate[0]->title)
-                            <li class=""><a href="{{asset(app()->getLocale().'/service/'.$menu->id)}}">{{$menu->translate[0]->title}}</a></li>
+                        @if(isset($menu) && $menu )
+                            <li class=""><a href="{{asset(app()->getLocale().'/service/'.$menu->id)}}">{{$menu->translate[0]->title??""}}</a></li>
                             @endif
                     @endforeach
-{{--                    <li class="uk-active"><a href="/price.html">Цены на услуги</a></li>--}}
-{{--                    <li class=""><a href="/flat_pereezd.html">Квартирный переезд</a></li>--}}
-{{--                    <li class=""><a href="/office_pereezd.html">Офисный переезд</a></li>--}}
-{{--                    <li class=""><a href="/dacha_pereezd.html">Дачный переезд</a></li>--}}
-{{--                    <li class=""><a href="/raznorabochie.html">Разнорабочие</a></li>--}}
-{{--                    <li class=""><a href="/uborka_i_clining.html">Уборка и клининг</a></li>--}}
-{{--                    <li class=""><a href="/demontazh.html">Упаковочные материалы</a></li>--}}
-{{--                    <li class=""><a href="/takelazh.html">Такелаж (свыше 100 кг)</a></li>--}}
-{{--                    <li class=""><a href="/vivoz_musora.html">Вывоз мусора</a></li>--}}
-{{--                    <li class=""><a href="/arenda_spectichniki.html">Грузовой транспорт и спецтехника</a></li>--}}
-
                 </ul>
             </div>
 {{--            @dd($menus)--}}
@@ -53,143 +42,31 @@
                                 <th class="uk-text-center">
                                     <div class="uk-height-1-1 center-price">
                                         <div class="head-panel uk-vertical-align">
-                                            <p class="uk-vertical-align-middle">Лучшая цена <br>по акции</p>
+                                            <p class="uk-vertical-align-middle">@lang('variable.price_title')</p>
                                         </div>
                                     </div>
                                 </th>
-                                <th class="uk-text-center"><span>Обычная цена</span></th>
+{{--                                <th class="uk-text-center"><span>Обычная цена</span></th>--}}
                             </tr>
                             </thead>
                             <tbody>
                     @foreach($submenus as $submenu)
-                        @if(isset($submenu) && $submenu && $submenu->translate[0]->title)
+                        @if(isset($submenu) && $submenu)
 {{--                            <li class=""><a href="">{{$submenu->translate[0]->title}}</a></li>--}}
                             <tr>
-                                <td>{{$submenu->translate[0]->title}}
+                                <td>{{$submenu->translate[0]->title??""}}
                                     <p class="uk-text-small"></p>
                                 </td>
-                                <td class="uk-text-center">от
-                                    <span>
-																											117
-																									</span>
-                                </td>
-                                <td class="uk-text-center">от <span>{{$submenu->price}}</span></td>
-                            </tr>
-
-                        @endif
-                    @endforeach
-
-
-{{--                            <tr>--}}
-{{--                                <td>Грузчик (стандартные работы)--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
 {{--                                <td class="uk-text-center">от--}}
 {{--                                    <span>--}}
 {{--																											117--}}
 {{--																									</span>--}}
 {{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>130</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Газель 1.5 тонны 10м3--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											540--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>600</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Машина 5 тонн 32м3--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											990--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>1100</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Уборка влажная - за м2--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											36--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>40</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Вывоз мусора на свалку ТБО 1.5 тонны--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											1800--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>2000</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Такелажник (свыше 100 кг)--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											315--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>350</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Экспедитор--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											225--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>250</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Работник для земляных работ--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											225--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>250</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Упаковщик--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											198--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>220</span></td>--}}
-{{--                            </tr>--}}
-{{--                            <tr>--}}
-{{--                                <td>Подсобник--}}
-{{--                                    <p class="uk-text-small"></p>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от--}}
-{{--                                    <span>--}}
-{{--																											198--}}
-{{--																									</span>--}}
-{{--                                </td>--}}
-{{--                                <td class="uk-text-center">от <span>220</span></td>--}}
-{{--                            </tr>--}}
+                                <td class="uk-text-center"> <span>{{$submenu->price}}</span></td>
+                            </tr>
+
+                        @endif
+                    @endforeach
 
                             </tbody>
                         </table>

@@ -7,7 +7,7 @@ $(document).ready(function () {
 			$forecastDivs = $('#future .container'),
 			$locateBtn = $('#locateBtn'),
 			$unitBtn = $('#unitBtn');
-	
+
 	// -----------------
 	// Geolocation API
 	// -----------------
@@ -19,7 +19,7 @@ $(document).ready(function () {
 		}
 		function showPosition(position) {
 			var location  = position.coords.latitude + ',' + position.coords.longitude;
-			getWeather(location); // Get weather after getting position
+			// getWeather(location); // Get weather after getting position
 			showStatus('success', 'Success! Location found.');
 			$locateBtn.addClass('on'); // Toggle btn class to on if successful
 		}
@@ -42,27 +42,27 @@ $(document).ready(function () {
 		showStatus('', 'Locating…'); // In progress text
 		navigator.geolocation.getCurrentPosition(showPosition, showError, {enableHighAccuracy: true});
 	}
-	
+
 	// ---------------
 	// Weather API
 	// ---------------
-	
+
 	// Send request to API to get weather data
-	function getWeather(location) {
-		var weatherRequest = $.ajax({
-			method: 'GET',
-			url: 'https://api.wunderground.com/api/d6fadca18738e4ec/geolookup/conditions/forecast/q/' + location + '.json'
-		});
-		// If getting was successful, send data to be processed
-		weatherRequest.done(function(data) {
-			processData(data);
-		});
-		// If request fails, show error
-		weatherRequest.fail(function(xhr, status, error) {
-			console.warn(error.message);
-		});
-	}
-	
+	// function getWeather(location) {
+	// 	var weatherRequest = $.ajax({
+	// 		method: 'GET',
+	// 		url: 'https://api.wunderground.com/api/d6fadca18738e4ec/geolookup/conditions/forecast/q/' + location + '.json'
+	// 	});
+	// 	// If getting was successful, send data to be processed
+	// 	weatherRequest.done(function(data) {
+	// 		processData(data);
+	// 	});
+	// 	// If request fails, show error
+	// 	weatherRequest.fail(function(xhr, status, error) {
+	// 		console.warn(error.message);
+	// 	});
+	// }
+
 	// Grab only the needed info from weather request and return
 	function processData(data) {
 		var current = data.current_observation;
@@ -94,7 +94,7 @@ $(document).ready(function () {
 		// Display weather ONLY after processing
 		displayWeather();
 	}
-	
+
 	// Display data on page
 	function displayWeather() {
 		// Separate today's forecast from the rest
@@ -114,7 +114,7 @@ $(document).ready(function () {
 		// Get/update temps with current units
 		updateTemps(currentUnits);
 	}
-	
+
 	// Update temps and add to page
 	function updateTemps(units) {
 		$('#current .temp').html(Math.round(currentTemp[units]));
@@ -123,12 +123,12 @@ $(document).ready(function () {
 			$(this).find('.low').html(forecast[index][units].low);
 		});
 	}
-	
+
 	// ------------
 	// Status Bar
 	// ------------
 	var $statusBar = $('#status');
-	
+
 	function showStatus(statusType, message) {
 		var $statusText = $statusBar.children('p');
 		var icon = '';
@@ -146,11 +146,11 @@ $(document).ready(function () {
 	$statusBar.children('.close').on('click', function() {
 		$statusBar.slideUp('fast'); // Slide up animation
 	});
-	
+
 	// ---------------
 	// Misc Functions
 	// ---------------
-	
+
 	// Get and format current time
 	function getCurrentTime() {
 		var now = new Date();
@@ -166,17 +166,17 @@ $(document).ready(function () {
 		}
 		return hours + ':' + mins + period;
 	}
-	
+
 	// ------------------------
 	// Locate and Unit Buttons
 	// ------------------------
-	
+
 	// locateBtn - click to get current location
 	$locateBtn.on('click', function() {
 		getCurrentLocation($(this));
 		$(this).removeClass('on pulse');
 	});
-	
+
 	// unitBtn - click to toggle units
 	$unitBtn.on('click', function() {
 		$(this).toggleClass('on')
@@ -185,16 +185,16 @@ $(document).ready(function () {
 		$(this).html(currentUnits);
 		updateTemps(currentUnits);
 	});
-	
+
 	// ------------------------
 	// Functions to run onload
-	// ------------------------ 
-	window.onload = function() {
-		getWeather(currentLocation); // Default to get Chicago weather
-		// Suggest to share location with message and button animation
-		setTimeout(function() {
-			showStatus('', 'Click on the <i class="fa fa-location-arrow" aria-hidden="true"></i> button to share your current location.');
-			$locateBtn.addClass('pulse');
-		}, 5000);
-	};
+	// ------------------------
+	// window.onload = function() {
+	// 	getWeather(currentLocation); // Default to get Chicago weather
+	// 	// Suggest to share location with message and button animation
+	// 	setTimeout(function() {
+	// 		showStatus('', 'Click on the <i class="fa fa-location-arrow" aria-hidden="true"></i> button to share your current location.');
+	// 		$locateBtn.addClass('pulse');
+	// 	}, 5000);
+	// };
 });

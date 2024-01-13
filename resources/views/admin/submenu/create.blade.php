@@ -97,9 +97,7 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <div class="tab-pane fade  show active  "
-                                 id="tab_"
-                                 role="tabpanel">
+
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label>Գինը *</label>
@@ -111,7 +109,7 @@
                                         @endif
                                     </div>
                                 </div>
-                            </div>
+
                             {{--                            </div>--}}
                             <input type="hidden" name="translate" value="submenu">
                             <div class="card-body">

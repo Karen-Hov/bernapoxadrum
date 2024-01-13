@@ -88,6 +88,16 @@
                                 @endif
                                     @endforeach
                         @endforeach
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label>Գին *</label>
+                                    <input type="number" name="price" class="form-control"
+                                           value="{{isset($service->price)?$service->price:old('price')}}">
+                                    @if ($errors->has('price'))
+                                        <span class="valid-error">{{ $errors->first('price') }}</span>
+                                    @endif
+                                </div>
+                            </div>
 
                             <div class="card-body">
                                 <label for="exampleInputFile">Նկար *</label>
@@ -113,18 +123,18 @@
 
                                 </div>
                                 <div class="box-2" style="width: 700px">
-                                    <div class="result"></div>
+{{--                                    <div class="result"></div>--}}
                                 </div>
                                 <!--rightbox-->
                                 <div class="box-2 img-result hide" >
                                     <!-- result of crop -->
-                                    <img class="cropped" src="" alt="" style="width: 800px;height: 800px">
+{{--                                    <img class="cropped" src="" alt="" style="width: 800px;height: 800px">--}}
                                 </div>
                                 <!-- input file -->
                                 <div class="box">
                                     <div class="options hide">
                                         {{--                    <label> Width</label>--}}
-                                        <input type="number" class="img-w" value="400" min="100" max="1200"/>
+{{--                                        <input type="number" class="img-w" value="400" min="100" max="1200"/>--}}
 
                                     </div>
                                     <!-- save btn -->

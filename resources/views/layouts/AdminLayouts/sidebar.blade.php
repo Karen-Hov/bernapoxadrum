@@ -66,6 +66,19 @@
 {{--                                        @dd(Route::currentRouteName())--}}
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
+                            <a href="{{route('services.index')}}"
+                               class="nav-link  @if(strpos(url()->current(),'my_admin/service')!== false)) active @endif">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>
+                                    Ծառայություններ Գլխավոր էջի
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
                             <a href="{{route('menu.index')}}"
                                class="nav-link  @if(strpos(url()->current(),'my_admin/menu')!== false)) active @endif">
                                 <i class="nav-icon fas fa-edit"></i>

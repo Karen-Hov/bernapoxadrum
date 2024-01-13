@@ -41,6 +41,7 @@ Route::prefix('my_admin')->middleware('auth')->group(function () {
         'about_us' => PostController::class,
         'menu' =>MenuController::class,
         'submenu' =>SubMenuController::class,
+        'services' =>App\Http\Controllers\Admin\ServiceController::class,
 
 
 //        'contact_us' => ContactAdminController::class,

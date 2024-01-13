@@ -68,46 +68,105 @@
                                         </div>
                                     </div>
                                 @endforeach
-                                <div class="card-body">
-                                    <label for="exampleInputFile">Նկար *</label>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-{{--                                            <input type="file" name="file" class="custom-file-input viewImage" id="exampleInputFile" accept=".jpeg,.png,.jpg,.png">--}}
-                                            <input type="file" name="file" class="custom-file-input viewImage" id="file-input" accept=".jpeg,.png,.jpg,.png">
 
-                                            <label class="custom-file-label" for="exampleInputFile">Ընտրել ֆայլը</label>
+
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <label>Գինը *</label>
+                                                <input type="number" name="price" class="form-control"
+                                                       value="{{old('price')}}">
+                                                @if ($errors->has('price'))
+                                                    <span
+                                                        class="valid-error">{{ $errors->first('price') }}</span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    <div class="card-body">
+                                        <label for="exampleInputFile">Նկար *</label>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                {{--                                        <input type="file" name="file" class="custom-file-input viewImage" value="{{$service->file??old('file') }}"--}}
+                                                {{--                                               id="exampleInputFile" accept=".jpeg,.png,.jpg,.png">--}}
+                                                <input type="file" name="file" class="custom-file-input viewImage" value="{{old('file') }}" id="file-input" accept=".jpeg,.png,.jpg,.png">
+
+                                                <label class="custom-file-label" for="exampleInputFile">Ընտրել ֆայլը</label>
+
+                                            </div>
+                                            <span class="error_message_file valid_error"></span>
+                                        </div>
+                                        <div class="addImage" style="margin:10px;">
+{{--                                            @if($service->file)--}}
+{{--                                                <img style="width: 150px;height: 150px"--}}
+{{--                                                     src="{{asset('storage/service/small/'.$service->file)}} "--}}
+{{--                                                     class="tableImage" alt="">--}}
+{{--                                                <span class="delimg"><i class="fas fa-times fa-2x"></i></span>--}}
+{{--                                            @endif--}}
+                                            <span></span>
+
+                                        </div>
+                                        <div class="box-2" style="width: 700px">
+                                            {{--                                    <div class="result"></div>--}}
+                                        </div>
+                                        <!--rightbox-->
+                                        <div class="box-2 img-result hide" >
+                                            <!-- result of crop -->
+                                            {{--                                    <img class="cropped" src="" alt="" style="width: 800px;height: 800px">--}}
+                                        </div>
+                                        <!-- input file -->
+                                        <div class="box">
+                                            <div class="options hide">
+                                                {{--                    <label> Width</label>--}}
+                                                {{--                                        <input type="number" class="img-w" value="400" min="100" max="1200"/>--}}
+
+                                            </div>
+                                            <!-- save btn -->
+                                            <button class="btn btn-dark save hide">Կտրել նկարը</button>
 
                                         </div>
 
-                                        <span class="error_message_file valid_error"></span>
+{{--                                        <input type='hidden' name="x">--}}
+
                                     </div>
-                                    @if ($errors->has('file'))
-                                        <span class="valid-error">{{ $errors->first('file') }}</span>
-                                    @endif
+{{--                                <div class="card-body">--}}
+{{--                                    <label for="exampleInputFile">Նկար *</label>--}}
+{{--                                    <div class="input-group">--}}
+{{--                                        <div class="custom-file">--}}
+{{--                                            <input type="file" name="file" class="custom-file-input viewImage" id="exampleInputFile" accept=".jpeg,.png,.jpg,.png">--}}
+{{--                                            <input type="file" name="file" class="custom-file-input viewImage" id="file-input" accept=".jpeg,.png,.jpg,.png">--}}
+
+{{--                                            <label class="custom-file-label" for="exampleInputFile">Ընտրել ֆայլը</label>--}}
+
+{{--                                        </div>--}}
+
+{{--                                        <span class="error_message_file valid_error"></span>--}}
+{{--                                    </div>--}}
+{{--                                    @if ($errors->has('file'))--}}
+{{--                                        <span class="valid-error">{{ $errors->first('file') }}</span>--}}
+{{--                                    @endif--}}
 {{--                                    <div class="addImage"></div>--}}
 
-                                    <div class="box-2" style="width: 700px">
-                                        <div class="result"></div>
-                                    </div>
-                                    <!--rightbox-->
-                                    <div class="box-2 img-result hide" >
-                                        <!-- result of crop -->
-                                        <img class="cropped" src="" alt="" style="width: 800px;height: 800px">
-                                    </div>
-                                    <!-- input file -->
-                                    <div class="box">
-                                        <div class="options hide">
-                                            {{--                    <label> Width</label>--}}
-                                            <input type="number" class="img-w" value="400" min="100" max="1200"/>
+{{--                                    <div class="box-2" style="width: 700px">--}}
+{{--                                        <div class="result"></div>--}}
+{{--                                    </div>--}}
+{{--                                    <!--rightbox-->--}}
+{{--                                    <div class="box-2 img-result hide" >--}}
+{{--                                        <!-- result of crop -->--}}
+{{--                                        <img class="cropped" src="" alt="" style="width: 800px;height: 800px">--}}
+{{--                                    </div>--}}
+{{--                                    <!-- input file -->--}}
+{{--                                    <div class="box">--}}
+{{--                                        <div class="options hide">--}}
+{{--                                            --}}{{--                    <label> Width</label>--}}
+{{--                                            <input type="number" class="img-w" value="400" min="100" max="1200"/>--}}
 
-                                        </div>
-                                        <!-- save btn -->
-                                        <button class="btn btn-dark save hide">Կտրել նկարը</button>
+{{--                                        </div>--}}
+{{--                                        <!-- save btn -->--}}
+{{--                                        <button class="btn btn-dark save hide">Կտրել նկարը</button>--}}
 
-                                    </div>
+{{--                                    </div>--}}
 
-                                    <input type='hidden' name="x">
-                                </div>
+{{--                                    <input type='hidden' name="x">--}}
+{{--                                </div>--}}
                             </div>
                             {{--                            </div>--}}
                             <input type="hidden" name="translate" value="service">
@@ -130,7 +189,7 @@
 @endsection
 
 @section('scripts')
-    <script src="{{asset('admin/js/crop-canvas.js')}}"></script>
+{{--    <script src="{{asset('admin/js/crop-canvas.js')}}"></script>--}}
 
     <script>
         $('.btn.btn-primary').click(function () {

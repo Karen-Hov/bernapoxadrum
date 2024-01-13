@@ -120,99 +120,40 @@
                             <div class="searchd"><i class="fa fa-search"></i>
                             </div>
                             <ul class="dl-menu">
-{{--                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Գլխավոր</a></li>--}}
-                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">Բեռնակիրներ</a></li>
-                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">Գները</a></li>
-                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Թափուր աշխատատեղեր</a></li>
-                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Ընկերություն</a></li>
-                                @if(isset($category) && !$category->isEmpty())
-                                @foreach($category as $cat)
-{{--                                        <li class="parent megamenu"><a href="#" class="effect_nav">{{$cat->translate[0]->title}}</a>--}}
+                                <li><a href="{{url(app()->getLocale())}}">@lang('menu.home')</a></li>
+
+                                {{--                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Գլխավոր</a></li>--}}
+{{--                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">Բեռնակիրներ</a></li>--}}
+{{--                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">Գները</a></li>--}}
+
+
+                                <li class="parent"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">@lang('menu.price')</a>
+                                    <ul class="lg-submenu">
+{{--                                        <li class="parent"><a href="#">Գները</a>--}}
 {{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li><a>Post Samples</a>--}}
-{{--                                                    <ul class="lg-submenu">--}}
-{{--                                                        @if($cat->submenu->isEmpty())--}}
-{{--                                                            @foreach($category as $cat)--}}
-{{--                                                                @dd($cat->submenu[0]->translate[0]->title,$cat)--}}
-{{--                                                            @if(isset($cat->submenu[0]->translate[0]->title))--}}
-{{--                                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">--}}
-{{--                                                                        {{isset($cat->submenu[0]->translate[0]->title)?$cat->submenu[0]->translate[0]->title:' '}}--}}
-{{--                                                                    </a>--}}
-{{--                                                                    @endif--}}
-{{--                                                            @endforeach--}}
-{{--                                                        @endif--}}
-{{--                                                        </li>--}}
-{{--                                                    </ul>--}}
+{{--                                                <li><a href="{{asset(app()->getLocale().'/service')}}">Գները</a>--}}
+{{--                                                </li>--}}
+{{--                                                <li><a href="{{asset(app()->getLocale().'/service')}}">Գները</a>--}}
 {{--                                                </li>--}}
 {{--                                            </ul>--}}
 {{--                                        </li>--}}
-                                        <li class="parent"><a href="#" class="effect_nav">{{$cat->translate[0]->title}}</a>
-                                            <ul class="lg-submenu">
-                                                <li class="parent"><a href="#">Blog</a>
-                                                    <ul class="lg-submenu">
-                                                        <li><a href="{{asset(app()->getLocale().'/blog')}}">Blog-Category</a>
-                                                        </li>
-                                                        <li><a href="{{asset(app()->getLocale().'/blog_single')}}">Blog-Single</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="parent"><a href="#">Gallery</a>
-                                                    <ul class="lg-submenu">
-                                                        <li><a href="{{asset(app()->getLocale().'/gallery')}}">Gallery</a>
-                                                        </li>
-                                                        <li><a href="{{asset(app()->getLocale().'/gallery_single')}}">Gallery-Single</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="{{asset(app()->getLocale().'/404')}}">404_error</a>
-                                                </li>
-                                                <li><a href="{{asset(app()->getLocale().'/life_style')}}">Life-Style</a>
-                                                </li>
-                                                <li><a href="{{asset(app()->getLocale().'/sport')}}">Sport</a>
-                                                </li>
-                                                <li><a href="{{asset(app()->getLocale().'/technology')}}">Technology</a>
-                                                </li>
-                                                <li><a href="{{asset(app()->getLocale().'/author')}}">Author</a>
-                                                </li>
-                                                <li><a href="login.html">Login</a>
-                                                </li>
-                                                <li><a href="register.html">Register</a>
-                                                </li>
-{{--                                                @dd($cat)--}}
-                                            @if(!$cat->submenu->isEmpty())
-                                                    {{--                                                @foreach($category as $cat)--}}
-                                                @foreach($cat->submenu as $sub)
+{{--                                        <li class="parent"><a href="#">Գները</a>--}}
+{{--                                            <ul class="lg-submenu">--}}
+{{--                                                <li><a href="{{asset(app()->getLocale().'/service')}}">Գները</a>--}}
+{{--                                                </li>--}}
+{{--                                                <li><a href="{{asset(app()->getLocale().'/service')}}">Գները</a>--}}
+{{--                                                </li>--}}
+{{--                                            </ul>--}}
+{{--                                        </li>--}}
 
-                                                    @if(isset($sub->translate[0]->title))
-                                                                <li><a href="#">
-                                                                        {{isset($sub->translate[0]->title)?$sub->translate[0]->title:' '}}
-                                                                    </a>
-                                                            @endif
-{{--                                                        @endforeach--}}
-                                                    @endforeach
+
+                                        @if(isset($menus) && $menus)
+                                            @foreach($menus as $menu)
+                                                @if(isset($menu) && $menu && $menu->translate[0]->title)
+                                                    <li class=""><a href="{{asset(app()->getLocale().'/service/'.$menu->id)}}">{{$menu->translate[0]->title}}</a></li>
                                                 @endif
-                                            </ul>
-                                        </li>
-                                    @endforeach
-                                @endif
-{{--                                <li class="parent"><a href="#" class="effect_nav">pages</a>--}}
-{{--                                    <ul class="lg-submenu">--}}
-{{--                                        <li class="parent"><a href="#">Blog</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/blog')}}">Blog-Category</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/blog_single')}}">Blog-Single</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                        <li class="parent"><a href="#">Gallery</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/gallery')}}">Gallery</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/gallery_single')}}">Gallery-Single</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
+                                            @endforeach
+                                        @endif
 {{--                                        <li><a href="{{asset(app()->getLocale().'/404')}}">404_error</a>--}}
 {{--                                        </li>--}}
 {{--                                        <li><a href="{{asset(app()->getLocale().'/life_style')}}">Life-Style</a>--}}
@@ -223,278 +164,11 @@
 {{--                                        </li>--}}
 {{--                                        <li><a href="{{asset(app()->getLocale().'/author')}}">Author</a>--}}
 {{--                                        </li>--}}
-{{--                                        <li><a href="login.html">Login</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="register.html">Register</a>--}}
-{{--                                        </li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-
-
-
-
-
-
-
-{{--                                <li class="parent megamenu"><a href="#" class="effect_nav">features</a>--}}
-{{--                                    <ul class="lg-submenu">--}}
-{{--                                        <li><a>Post Samples</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Parallax</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Lightbox </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Images </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Video Post</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Self Hosted </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Self Hosted </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">SoundCloud</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Google Map</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a>Reviews</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Stars</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Points</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Percent</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Position</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Position post</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Position Custom</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Best Reviews</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a>Shortcodes</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Boxes</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Buttons</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Columns</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Social  </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Tabs </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Text Lists </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Lightbox</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Content </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Audio and Video</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a>Page Templates</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Masonry </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Media </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Authors</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Blog List </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Best Reviews</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Login Page </a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Sitemap Page</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Tags</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Timeline page</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-{{--                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/sport')}}" class="effect_nav"> sport </a>--}}
-{{--                                    <ul class="lg-submenu prs_navi_video_wrapper">--}}
-{{--                                        <li class=" prs_vp_hover_overlay">--}}
-{{--                                            <div class="ne_re_left_top_main_wrapper">--}}
-{{--                                                <div class="ne_re_left_img_main_wrapper">--}}
-
-{{--                                                    <img src="{{asset('front/images/content/bs1.jpg')}}" alt="img">--}}
-
-{{--                                                    <h2>Bussiness</h2>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="ne_re_left_img_cont_main_wrapper">--}}
-{{--                                                    <h3><a href="#">Award of the year</a></h3>--}}
-{{--                                                    <ul class="ne_re_social1_wrapper">--}}
-{{--                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2020</a>--}}
-{{--                                                        </li>--}}
-
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </li>--}}
-{{--                                        <li class=" prs_vp_hover_overlay">--}}
-{{--                                            <div class="ne_re_left_top_main_wrapper">--}}
-{{--                                                <div class="ne_re_left_img_main_wrapper">--}}
-{{--                                                    <img src="{{asset('front/images/content/bs2.jpg')}}" alt="img">--}}
-{{--                                                    <h2>technology</h2>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="ne_re_left_img_cont_main_wrapper">--}}
-{{--                                                    <h3><a href="#">Google vote-shifting</a></h3>--}}
-{{--                                                    <ul class="ne_re_social1_wrapper">--}}
-{{--                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 Nov, 2020</a>--}}
-{{--                                                        </li>--}}
-
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </li>--}}
-{{--                                        <li class=" prs_vp_hover_overlay">--}}
-{{--                                            <div class="ne_re_left_top_main_wrapper">--}}
-{{--                                                <div class="ne_re_left_img_main_wrapper">--}}
-{{--                                                    <img src="{{asset('front/images/content/bs3.jpg')}}" alt="img">--}}
-{{--                                                    <h2>travel</h2>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="ne_re_left_img_cont_main_wrapper">--}}
-{{--                                                    <h3><a href="#">Tourism Dubai tourist</a></h3>--}}
-{{--                                                    <ul class="ne_re_social1_wrapper">--}}
-{{--                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 Feb, 2020</a>--}}
-{{--                                                        </li>--}}
-
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </li>--}}
-{{--                                        <li class=" prs_vp_hover_overlay">--}}
-{{--                                            <div class="ne_re_left_top_main_wrapper">--}}
-{{--                                                <div class="ne_re_left_img_main_wrapper">--}}
-{{--                                                    <img src="{{asset('front/images/content/bs4.jpg')}}" alt="img">--}}
-{{--                                                    <h2>health</h2>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="ne_re_left_img_cont_main_wrapper">--}}
-{{--                                                    <h3><a href="#">They are backed Kennedy </a></h3>--}}
-{{--                                                    <ul class="ne_re_social1_wrapper">--}}
-{{--                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 Mar, 2020</a>--}}
-{{--                                                        </li>--}}
-
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-{{--                                <li class="parent megamenu"><a href="#" class="effect_nav"> technology </a>--}}
-{{--                                    <ul class="lg-submenu prs_navi_video_wrapper">--}}
-{{--                                        <li class="prs_vp_hover_overlay">--}}
-{{--                                            <div class="ne_re_left_top_main_wrapper">--}}
-{{--                                                <div class="ne_re_left_img_main_wrapper">--}}
-{{--                                                    <img src="{{asset('front/images/content/bs1.jpg')}}" alt="img">--}}
-{{--                                                    <h2>health</h2>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="ne_re_left_img_cont_main_wrapper">--}}
-{{--                                                    <h3><a href="#">They are backed Kennedy </a></h3>--}}
-{{--                                                    <ul class="ne_re_social1_wrapper">--}}
-{{--                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 Feb, 2020</a>--}}
-{{--                                                        </li>--}}
-
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </li>--}}
-{{--                                        <li class="prs_vp_hover_overlay">--}}
-{{--                                            <div class="ne_re_left_top_main_wrapper">--}}
-{{--                                                <div class="ne_re_left_img_main_wrapper">--}}
-{{--                                                    <img src="{{asset('front/images/content/bs3.jpg')}}" alt="img">--}}
-{{--                                                    <h2>travel</h2>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="ne_re_left_img_cont_main_wrapper">--}}
-{{--                                                    <h3><a href="#">Tourism Dubai tourist</a></h3>--}}
-{{--                                                    <ul class="ne_re_social1_wrapper">--}}
-{{--                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 Jun, 2020</a>--}}
-{{--                                                        </li>--}}
-
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </li>--}}
-{{--                                        <li class="prs_vp_hover_overlay">--}}
-{{--                                            <div class="ne_re_left_top_main_wrapper">--}}
-{{--                                                <div class="ne_re_left_img_main_wrapper">--}}
-{{--                                                    <img src="{{asset('front/images/content/bs2.jpg')}}" alt="img">--}}
-{{--                                                    <h2>technology</h2>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="ne_re_left_img_cont_main_wrapper">--}}
-{{--                                                    <h3><a href="#">Google vote-shifting</a></h3>--}}
-{{--                                                    <ul class="ne_re_social1_wrapper">--}}
-{{--                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 Dec, 2020</a>--}}
-{{--                                                        </li>--}}
-
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </li>--}}
-{{--                                        <li class="prs_vp_hover_overlay">--}}
-{{--                                            <div class="ne_re_left_top_main_wrapper">--}}
-{{--                                                <div class="ne_re_left_img_main_wrapper">--}}
-{{--                                                    <img src="{{asset('front/images/content/bs1.jpg')}}" alt="img">--}}
-{{--                                                    <h2>Bussiness</h2>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="ne_re_left_img_cont_main_wrapper">--}}
-{{--                                                    <h3><a href="#">Award of the year</a></h3>--}}
-{{--                                                    <ul class="ne_re_social1_wrapper">--}}
-{{--                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 A, 2020</a>--}}
-{{--                                                        </li>--}}
-
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-{{--                                <li class="parent"><a href="#" class="effect_nav">pages</a>--}}
-{{--                                    <ul class="lg-submenu">--}}
-{{--                                        <li class="parent"><a href="#">Blog</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/blog')}}">Blog-Category</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/blog_single')}}">Blog-Single</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                        <li class="parent"><a href="#">Gallery</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/gallery')}}">Gallery</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/gallery_single')}}">Gallery-Single</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/404')}}">404_error</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/life_style')}}">Life-Style</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/sport')}}">Sport</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/technology')}}">Technology</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/author')}}">Author</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="login.html">Login</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="register.html">Register</a>--}}
-{{--                                        </li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-                                <li class="parent"><a href="{{asset(app()->getLocale().'/contact')}}" class="effect_nav">Կապ մեզ հետ</a>
+                                    </ul>
+                                </li>
+{{--                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Թափուր աշխատատեղեր</a></li>--}}
+                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">@lang('menu.about_us')</a></li>
+                                <li class="parent"><a href="{{asset(app()->getLocale().'/contact')}}" class="effect_nav">@lang('menu.contact_us')</a>
                                 </li>
                             </ul>
                         </div>
