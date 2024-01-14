@@ -109,6 +109,7 @@
                         <img src="{{asset('front/images/header/logo.png')}}" alt="logo" class="img-responsive hidden-xs">
                         <img src="{{asset('front/images/header/logo.png')}}" alt="logo" class="visible-xs">
                     </a>
+
                 </div>
                 <div class="prs_menu_main_wrapper">
                     <nav class="navbar navbar-default">

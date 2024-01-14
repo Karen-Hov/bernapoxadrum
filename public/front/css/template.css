@@ -1173,7 +1173,7 @@ html:not(.uk-touch) .uk-button-primary.button-light:hover {
 /* Показываем получение фокуса. */
 
 #modal-quick-order>div {
-    background: rgba(42, 41, 41, .98) url(../images/img/modal-phone.png) left bottom no-repeat;
+    background: rgba(42, 41, 41, .98) url(../images/modal-phone.png) left bottom no-repeat;
 }
 
 #modal-quick-order .uk-close:before,
@@ -1924,7 +1924,7 @@ p.modal-footer {
 }
 
 .header-сontacts {
-    background: url(../images/img/header_contacts.jpg) center bottom no-repeat;
+    background: url(../images/header_contacts.jpg) center bottom no-repeat;
     height: 600px;
     color: white;
 }

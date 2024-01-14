@@ -237,14 +237,14 @@
                         <p class="small-width">Позвоните нам прямо сейчас и узнайте все интересующие вас подробности.</p>
                         <div class="panel-phone-contact">
                             <p>с 8:00 до 21:00, пн - пт</p>
-                            <p class="phone-contact"><a href="tel:+55626212"> (55) 62-62-12</a></p>
+                            <p class="phone-contact"><a href="tel:+37455626212">+374 (55) 62-62-12</a></p>
                         </div>
-                        <form action="" class="uk-form">
-                            <div class="uk-form-row">
+{{--                        <form action="" class="uk-form">--}}
+{{--                            <div class="uk-form-row">--}}
 {{--                                <input type="text" name="phone" id="phone" placeholder="(55) 62-62-12">--}}
-                                <button class="uk-button uk-button-secondary b-work" data-live="0" type="button">Заказать звонок</button>
-                            </div>
-                        </form>
+{{--                                <button class="uk-button uk-button-secondary b-work" data-live="0" type="button">Заказать звонок</button>--}}
+{{--                            </div>--}}
+{{--                        </form>--}}
                     </div>
                 </div>
             </div>
