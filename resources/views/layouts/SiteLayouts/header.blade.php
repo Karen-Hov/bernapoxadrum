@@ -118,8 +118,8 @@
                                 <img src="{{asset('front/images/header/bars.png')}}" alt="bar_png">
                             </button>
                             <div class="clearfix"></div>
-                            <div class="searchd"><i class="fa fa-search"></i>
-                            </div>
+{{--                            <div class="searchd"><i class="fa fa-search"></i>--}}
+{{--                            </div>--}}
                             <ul class="dl-menu">
                                 <li><a href="{{url(app()->getLocale())}}">@lang('menu.home')</a></li>
 
@@ -127,7 +127,7 @@
 {{--                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">Բեռնակիրներ</a></li>--}}
 {{--                                <li class="parent megamenu"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">Գները</a></li>--}}
 
-
+                                <li class="parent megamenu"><a href="{{asset(app()->getLocale())}}#about_us" class="effect_nav">@lang('menu.about_us')</a></li>
                                 <li class="parent"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">@lang('menu.price')</a>
                                     <ul class="lg-submenu">
 {{--                                        <li class="parent"><a href="#">Գները</a>--}}
@@ -155,20 +155,8 @@
                                                 @endif
                                             @endforeach
                                         @endif
-{{--                                        <li><a href="{{asset(app()->getLocale().'/404')}}">404_error</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/life_style')}}">Life-Style</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/sport')}}">Sport</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/technology')}}">Technology</a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a href="{{asset(app()->getLocale().'/author')}}">Author</a>--}}
-{{--                                        </li>--}}
                                     </ul>
                                 </li>
-{{--                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">Թափուր աշխատատեղեր</a></li>--}}
-                                <li class="parent megamenu"><a href="{{asset('/')}}" class="effect_nav">@lang('menu.about_us')</a></li>
                                 <li class="parent"><a href="{{asset(app()->getLocale().'/contact')}}" class="effect_nav">@lang('menu.contact_us')</a>
                                 </li>
                             </ul>

@@ -63,7 +63,7 @@
                     <li><a href="{{url(app()->getLocale())}}">@lang('menu.home')</a></li>
                     <li><a href="{{asset(app()->getLocale().'/contact')}}">@lang('menu.contact_us')</a></li>
                 </ul>
-                <h1 class="title-main">Получите бесплатную <br>консультацию</h1>
+                <h1 class="title-main">@lang('variable.text_17')<br>@lang('variable.text_18')</h1>
                 <p class="phone-block"><i class="uk-icon-phone first"></i> <a href="tel:+37455626212"> (+374) 55-62-62-12</a></p>
 
                 <ul class="contact-list">

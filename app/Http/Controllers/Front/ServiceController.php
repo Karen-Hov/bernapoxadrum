@@ -20,6 +20,10 @@ class ServiceController extends Controller
             $s->where('code',app()->getLocale())->where('type','submenu');
         }]) ->get();
 
+        $avtiv_menu =  Menu::with(['translate'=>function ($q) {
+            $q->where('code',app()->getLocale())->where('type','menu');
+        }]) ->find($id);
+
 
         $submenus = Menu::with(['translate'=>function ($q) {
             $q->where('code',app()->getLocale())->where('type','menu');
@@ -35,6 +39,10 @@ class ServiceController extends Controller
 
 //        dd($menus,$submenus);
 
-        return view('front.service')->with(['menus'=>$menus,'submenus'=>$submenus]);
+        return view('front.service')->with([
+            'menus'=>$menus,
+            'avtiv_menu'=>$avtiv_menu,
+            'submenus'=>$submenus
+        ]);
     }
 }

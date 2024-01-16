@@ -8,14 +8,14 @@
 
 @section('content')
 
-{{--@dd($menus)--}}
+{{--@dd($submenus,$menus,$avtiv_menu)--}}
 <div class="breadcrumbs-block">
     <div class="uk-container uk-container-center">
         <ul class="breadcrumbs-list">
             <li><a href="{{url(app()->getLocale())}}">@lang('menu.home')</a></li>
-            <li><a href="/price.html">Цены на услуги</a></li>
+            @if(isset($avtiv_menu) && $avtiv_menu )<li><a href="#" class="servic_name">{{$avtiv_menu->translate[0]->title}}</a></li> @endif
         </ul>
-        <h1 class="title-main">Цены на услуги <br>в Кемерово</h1>
+        <h3 class="title-main" style="font-size: 33px"> @if(isset($avtiv_menu) && $avtiv_menu ) {{$avtiv_menu->translate[0]->title}} @endif<br>@lang('variable.text_15')</h3>
     </div>
 </div>
 <div class="price-table-block">
@@ -26,7 +26,7 @@
 
                     @foreach($menus as $menu)
                         @if(isset($menu) && $menu )
-                            <li class=""><a href="{{asset(app()->getLocale().'/service/'.$menu->id)}}">{{$menu->translate[0]->title??""}}</a></li>
+                            <li class="@if(isset($avtiv_menu) && $avtiv_menu ->id ==  $menu->id) active_menu @endif"><a href="{{asset(app()->getLocale().'/service/'.$menu->id)}}">{{$menu->translate[0]->title??""}}</a></li>
                             @endif
                     @endforeach
                 </ul>
@@ -38,7 +38,7 @@
                         <table class="uk-table table-price uk-table-middle uk-table-hover uk-table-striped">
                             <thead>
                             <tr>
-                                <th><span>Цены на услуги</span></th>
+                                <th><span class="servic_name"> @if(isset($avtiv_menu) && $avtiv_menu ) {{$avtiv_menu->translate[0]->title}} @endif</span></th>
                                 <th class="uk-text-center">
                                     <div class="uk-height-1-1 center-price">
                                         <div class="head-panel uk-vertical-align">
@@ -72,7 +72,7 @@
                         </table>
                     </li>
                 </ul>
-                <p class="price-text-footer">Цены указаны в рублях за час</p>
+                <p class="price-text-footer">@lang('variable.text_16')</p>
             </div>
         </div>
     </div>
@@ -199,7 +199,7 @@
 <!-- end main contend -->
 <div class="thanks-block">
     <div class="uk-container uk-container-center">
-        <h3 class="uk-text-center title-header">Благодарности <span class="uk-hidden-small">от известных</span> клиентов</h3>
+        <h3 class="uk-text-center title-header">@lang('variable.text_10')</h3>
         <div class="uk-widht-1-1 uk-width-xlarge-5-6 uk-align-center">
             <ul class="uk-grid uk-grid-width-1-3 uk-grid-width-small-1-3 uk-grid-width-medium-1-6 uk-grid-width-large-1-6 uk-grid-width-xlarge-1-6 uk-text-center uk-margin-large-top"
                 data-uk-grid-margin="">
@@ -214,24 +214,24 @@
                 <div class="uk-slidenav-position uk-margin">
                     <ul class="uk-slideset uk-grid uk-flex-center uk-grid-width-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3 uk-grid-width-xlarge-1-4 uk-grid-width-small-1-1">
                         <li class="uk-active" style="">
-                            <a href="/pic/thanks/4955.jpg" data-uk-lightbox="{group:'my-group'}" title="Башнефть">
+                            <a href="#" data-uk-lightbox="{group:'my-group'}" title="Башнефть">
                                 <img src="{{asset('front/images/4955_th.jpg')}}" alt="img">
 
                             </a>
                         </li>
                         <li class="uk-active" style="">
-                            <a href="/pic/thanks/4956.jpg" data-uk-lightbox="{group:'my-group'}" title="PONY EXPRESS">
+                            <a href="#" data-uk-lightbox="{group:'my-group'}" title="PONY EXPRESS">
                                 <img src="{{asset('front/images/4956_th.jpg')}}" alt="PONY EXPRESS">
                             </a>
                         </li>
                         <li class="uk-active" style="">
-                            <a href="/pic/thanks/4957.jpg" data-uk-lightbox="{group:'my-group'}" title="Ростелеком">
+                            <a href="#" data-uk-lightbox="{group:'my-group'}" title="Ростелеком">
                                 <img src="{{asset('front/images/4957_th.jpg')}}" alt="Ростелеком">
 
                             </a>
                         </li>
                         <li class="uk-active" style="">
-                            <a href="/pic/thanks/4958.jpg" data-uk-lightbox="{group:'my-group'}" title="АО РЖД">
+                            <a href="#" data-uk-lightbox="{group:'my-group'}" title="АО РЖД">
                                 <img src="{{asset('front/images/4958_th.jpg')}}" alt="АО РЖД">
                             </a>
                         </li>
@@ -243,10 +243,9 @@
                 </div>
             </div>
         </div>
-        <div class="uk-text-center uk-margin-large-top">
-            <a href="#" class="uk-button uk-button-primary button-light button-round">Все
-                благодарности</a>
-        </div>
+{{--        <div class="uk-text-center uk-margin-large-top">--}}
+{{--            <a href="#" class="uk-button uk-button-primary button-light button-round">Все благодарности</a>--}}
+{{--        </div>--}}
     </div>
 </div>
 <div class="consultating-block">
@@ -259,8 +258,8 @@
             <div
                 class="uk-width-small-text-center uk-width-1-1 uk-width-medium-1-2 uk-width-large-1-2 uk-width-xlarge-1-2">
                 <div class="panel-form-text uk-width-1-1 uk-width-medium-6-7 uk-width-large-6-7 uk-width-xlarge-6-7">
-                    <h4>Получите бесплатную <br>консультацию за 30 секунд</h4>
-                    <p>Позвоните нам прямо сейчас и узнайте все интересующие вас подробности.</p>
+                    <h4>@lang('variable.text_13')</h4>
+                    <p>@lang('variable.text_14')</p>
                     <div class="panel-phone-contact">
                         <p>с 8:00 до 21:00, пн - пт</p>
                         <p class="phone-contact"><a href="tel:+37455626212">+374 (55) 62-62-12</a></p>
