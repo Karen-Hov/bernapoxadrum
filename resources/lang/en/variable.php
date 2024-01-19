@@ -24,6 +24,15 @@ For additional convenience, you can use other services of various profiles. From
     'text_16' => 'Prices are indicated in AMD per hour',
     'text_17' => 'Get a free',
     'text_18' => 'consultation',
+    'text_19' => 'We fulfill orders around the clock',
+    'text_20' => 'Have questions?',
+    'text_21' => 'Leave your phone number, we will call you back',
+    'text_22' => 'Register',
+
+
+    'create_number' => 'Your phone number has been successfully registered.',
+
+
 
 
 

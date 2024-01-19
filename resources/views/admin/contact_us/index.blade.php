@@ -24,53 +24,21 @@
                         <table id="example2" class="table table-bordered table-striped">
                             <thead>
                             <tr>
-                                <th>Անուն</th>
-                                <th>Էլ․հասցե</th>
+                                <th>Հ/Հ</th>
                                 <th>Հեռախոսահամար</th>
-                                @if(Route::currentRouteName()=='messages.partners' || Route::currentRouteName()=='messages.request')
-                                    <th> Ընկերության Անվանում</th>
-                                @endif
-                                @if(Route::currentRouteName()=='messages.partners')
-                                    <th>Երկիր</th>
-                                @endif
-                                <th>Հաղորդագրություն</th>
-
                                 <th>Գործողություն</th>
                             </tr>
                             </thead>
                             <tbody>
                             @if($contacts)
                                 @foreach($contacts as $item)
-                                    <p>
-                                        <td >{{isset($item->full_name)?$item->full_name:''}}</td>
-                                        <td >{{isset($item->email)?$item->email:''}}</td>
+                                    <tr>
+                                        <td >{{isset($item->id)?$item->id:''}}</td>
                                         <td >{{isset($item->phone)?$item->phone:''}}</td>
-                                        @if(Route::currentRouteName()=='messages.partners' || Route::currentRouteName()=='messages.request')
-                                            <td>{{  isset($item->company)?$item->company:' '}}</td>
-                                        @endif
-                                        @if(Route::currentRouteName()=='messages.partners')
-                                            <td>{{  isset($item->country)?$item->country:' '}}</td>
-                                        @endif
-                                    <td style="width: 20px;">{!!  isset($item->message)?Str::limit($item->message,50):' '!!}</td>
+                                        <td >{{isset($item->phone)?$item->phone:''}}</td>
+
 
                                         <td class="project-actions text-right">
-                                            <p  class="value" style="display: none">{!!  isset($item->full_name)?$item->full_name:' '!!}</p>
-                                            <p  class="value" style="display: none">{!!  isset($item->email)?$item->email:' '!!}</p>
-                                            <p  class="value" style="display: none">{!!  isset($item->phone)?$item->phone:' '!!}</p>
-
-                                            @if(Route::currentRouteName()=='messages.partners' || Route::currentRouteName()=='messages.request')
-                                                <p  class="value" style="display: none">{!!  isset($item->company)?$item->company:' '!!}</p>
-                                            @endif
-                                            @if(Route::currentRouteName()=='messages.partners')
-                                                <p  class="value" style="display: none">{!!  isset($item->country)?$item->country:' '!!}</p>
-                                            @endif
-                                            <p  class="value" style="display: none">{!!  isset($item->message)?$item->message:' '!!}</p>
-
-                                            <a class="btn btn-success btn-sm modal_click" data-toggle="modal" data-target="#modal-primary">
-                                                <i class="fas fa-pencil-alt">
-                                                </i>
-                                                Տեսնել
-                                            </a>
 
                                             <a class="btn btn-danger btn-sm"
                                                onclick="deleteItem(this,'{{route('contact_us.destroy',$item->id)}}', 'DELETE')">

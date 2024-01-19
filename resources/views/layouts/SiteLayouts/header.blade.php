@@ -16,17 +16,17 @@
                 <div id="day_and_time">
                     <p id="date"></p>
                 </div>
-                <div class="ne_top_about_btn hidden-xs"> <a href="{{asset(app()->getLocale().'/contact')}}">contact us</a></div>
+                <div class="ne_top_about_btn hidden-xs"> <a href="{{asset(app()->getLocale().'/contact')}}">@lang('menu.contact_us')</a></div>
             </div>
             <div class="ne_right_sec_main_wrapper">
                 <ul>
-                    <li class="hidden-xs"><a href="#">Subscribe</a>
+{{--                    <li class="hidden-xs"><a href="#">Subscribe</a>--}}
+{{--                    </li>--}}
+                    <li class="hidden-xs"><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
-                    <li class="hidden-xs"><a href="#"><i class="fa fa-twitter"></i></a>
+                    <li class="hidden-xs"><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li class="hidden-xs"><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="hidden-xs"><a href="#"><i class="fa fa-linkedin"></i></a>
+                    <li class="hidden-xs"><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </li>
 {{--                    <li class="hidden-xs"><a href="login.html">login &nbsp;<i class="fa fa-user"></i></a></li>--}}
                     <li class="hidden-xs">
@@ -56,34 +56,18 @@
                             </a> <a href="#" class="manu-close"><i class="fa fa-times"></i></a>
                         </div>
                         <ul class="mobile-list-nav">
-                            <li><a href="#">WORLD NEWS</a>
-                            </li>
-                            <li><a href="#">SPORT NEWS</a>
-                            </li>
-                            <li><a href="#">MUSIC NEWS</a>
-                            </li>
-                            <li><a href="#">BUSINESS NEWS</a>
-                            </li>
-                            <li><a href="#">TECHNOLOGICAL</a>
-                            </li>
-                            <li><a href="#">TRAVEL NEWS</a>
-                            </li>
-                            <li><a href="#">MECIAL NEWS</a>
-                            </li>
-                            <li><a href="#">WORLD NEWS</a>
-                            </li>
-                            <li><a href="#">SPORT NEWS</a>
-                            </li>
-                            <li><a href="#">MUSIC NEWS</a>
-                            </li>
-                            <li><a href="#">BUSINESS NEWS</a>
-                            </li>
-                            <li><a href="#">TECHNOLOGICAL</a>
-                            </li>
-                            <li><a href="#">TRAVEL NEWS</a>
-                            </li>
-                            <li><a href="#">MECIAL NEWS</a>
-                            </li>
+{{--                            <li><a href="#">WORLD NEWS</a></li>--}}
+                            <?php $i = 0;  ?>
+                            @foreach(config('lang') as $key=>$item)
+                                @if($item['code'] != app()->getLocale())
+                                    <?php $i++;  ?>
+{{--                                    <a href="{{Route("switchLang",$item['code'])}}"  class="montserat">--}}
+{{--                                        {{$item['nam']}} @if($i == 1) / @endif--}}
+{{--                                    </a>--}}
+                                        <li><a href="#"> {{$item['nam']}} @if($i == 1) / @endif</a></li>
+                                @endif
+                            @endforeach
+
                         </ul>
                     </div>
                 </div>

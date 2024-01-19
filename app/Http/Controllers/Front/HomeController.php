@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\PostCreateNumber;
 use App\Models\Menu;
 use App\Models\Service;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class HomeController extends Controller
 {
@@ -28,39 +31,18 @@ class HomeController extends Controller
 
     }
 
-
-
-
-
-
-
-    public function blog(){
-        return view('front.blog');
-    }
-    public function blog_singl(){
-        return view('front.blog_singl.blade.php');
-    }
-
     public function contact(){
         return view('front.contact');
     }
-    public function sport(){
-        return view('front.sport');
-    }
-    public function author(){
-        return view('front.author');
-    }
-    public function gallery(){
-        return view('front.gallery');
-    }
-    public function gallery_singl(){
-        return view('front.gallery_singl');
-    }
-    public function technology(){
-        return view('front.technology');
-    }
-    public function life_style(){
-        return view('front.life_style');
-    }
+
+     public function contactAdd(PostCreateNumber $request){
+         try {
+             DB::table('contact')->insert( ["phone" => $request->phone]);
+             return Redirect::back()->with('create_number','true');
+         } catch (Exception $ex) {
+             echo $ex->getMessage();
+         }
+
+        }
 
 }

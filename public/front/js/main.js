@@ -208,53 +208,53 @@ jQuery(document).ready(function($) {
             );
         }
     });
-    $("#modal-director .uk-button").click(function(e){
-        e.preventDefault();
-
-        var error = false;
-        var phone = $(this).closest("form").find("input[name=phone]").val();
-        var is_checked = $(this).closest("form").find("input#approve-checkbox2").is(":checked");
-        if(!phone){
-            $(this).closest("form").find("input[name=phone]").addClass("error-border");
-            error = true;
-        }else{
-            $(this).closest("form").find("input[name=phone]").removeClass("error-border");
-        }
-        var message = $(this).closest("form").find("textarea[name=message-client]").val();
-        if(!message){
-            $(this).closest("form").find("textarea[name=message-client]").addClass("error-border");
-            error = true;
-        }else{
-            $(this).closest("form").find("textarea[name=message-client]").removeClass("error-border");
-        }
-        var mail = $(this).closest("form").find("input[name=email-client]").val();
-        var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-        if(!pattern.test(mail)){
-            $(this).closest("form").find("input[name=email-client]").addClass("error-border");
-            error = true;
-        }else{
-            $(this).closest("form").find("input[name=email-client]").removeClass("error-border");
-        }
-        if(!is_checked){
-            $(".uk-text-center label").css("color", "red");
-            error = true;
-        }else{
-            $(".uk-text-center label").css("color", "#444");
-        }
-        if(!error){
-            $.post(
-                '/ajax',
-                {'action': 'mail_director', 'phone' : phone, 'mail' : mail, 'message' : message, 'qwert' : 'qwert'},
-                function(data){
-                    var modal = UIkit.modal("#modal-director");
-                    modal.hide();
-
-                    var modal = UIkit.modal("#modal-director-finish");
-                    modal.show();
-                }
-            );
-        }
-    });
+    // $("#modal-director .uk-button").click(function(e){
+    //     e.preventDefault();
+    //
+    //     var error = false;
+    //     var phone = $(this).closest("form").find("input[name=phone]").val();
+    //     var is_checked = $(this).closest("form").find("input#approve-checkbox2").is(":checked");
+    //     if(!phone){
+    //         $(this).closest("form").find("input[name=phone]").addClass("error-border");
+    //         error = true;
+    //     }else{
+    //         $(this).closest("form").find("input[name=phone]").removeClass("error-border");
+    //     }
+    //     var message = $(this).closest("form").find("textarea[name=message-client]").val();
+    //     if(!message){
+    //         $(this).closest("form").find("textarea[name=message-client]").addClass("error-border");
+    //         error = true;
+    //     }else{
+    //         $(this).closest("form").find("textarea[name=message-client]").removeClass("error-border");
+    //     }
+    //     var mail = $(this).closest("form").find("input[name=email-client]").val();
+    //     var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+    //     if(!pattern.test(mail)){
+    //         $(this).closest("form").find("input[name=email-client]").addClass("error-border");
+    //         error = true;
+    //     }else{
+    //         $(this).closest("form").find("input[name=email-client]").removeClass("error-border");
+    //     }
+    //     if(!is_checked){
+    //         $(".uk-text-center label").css("color", "red");
+    //         error = true;
+    //     }else{
+    //         $(".uk-text-center label").css("color", "#444");
+    //     }
+    //     if(!error){
+    //         $.post(
+    //             '/ajax',
+    //             {'action': 'mail_director', 'phone' : phone, 'mail' : mail, 'message' : message, 'qwert' : 'qwert'},
+    //             function(data){
+    //                 var modal = UIkit.modal("#modal-director");
+    //                 modal.hide();
+    //
+    //                 var modal = UIkit.modal("#modal-director-finish");
+    //                 modal.show();
+    //             }
+    //         );
+    //     }
+    // });
 
     $("button.get_pp").click(function(e){
         e.preventDefault();
@@ -329,52 +329,52 @@ jQuery(document).ready(function($) {
     // before footer form move button left
     var i = 0;
     //if ($('.consultating-block .uk-form .uk-button').attr('data-live') < 1) {
-    $('.consultating-block .uk-form .uk-button.b-work:not(.uk-active)').on("click", function(event) {
-        if($(this).hasClass('uk-active')){
-            var phone = $(this).closest('.uk-form').find('input').val();
-
-            if(!phone){
-                $(this).closest('.uk-form').find('input').addClass("error-border");
-            }else{
-                $(this).closest('.uk-form').find('input').removeClass("error-border");
-                var input = $(this);
-                $.post(
-                    '/ajax',
-                    {'action': 'fast_order', 'phone' : phone, 'qwert' : 'qwert'},
-                    function(data){
-                        var modal = UIkit.modal("#modal-we-calling");
-                        modal.show();
-                        $(input).removeClass('uk-active');
-                    }
-                );
-            }
-        }else{
-            $(this).addClass('uk-active');
-            $(this).closest('.uk-form').find('input').focus();
-            $(this).attr('data-live', i++);
-        }
-    });
-    $('.yellow-question-block .uk-form .uk-button').on("click", function(event) {
-        event.preventDefault();
-
-        var phone = $(this).closest('.uk-form').find('input').val();
-
-        if(!phone){
-            $(this).closest('.uk-form').find('input').addClass("error-border");
-        }else{
-            $(this).closest('.uk-form').find('input').removeClass("error-border");
-            var input = $(this);
-            $.post(
-                '/ajax',
-                {'action': 'fast_order', 'phone' : phone, 'qwert' : 'qwert'},
-                function(data){
-                    var modal = UIkit.modal("#modal-we-calling");
-                    modal.show();
-                    $(input).removeClass('uk-active');
-                }
-            );
-        }
-    });
+    // $('.consultating-block .uk-form .uk-button.b-work:not(.uk-active)').on("click", function(event) {
+    //     if($(this).hasClass('uk-active')){
+    //         var phone = $(this).closest('.uk-form').find('input').val();
+    //
+    //         if(!phone){
+    //             $(this).closest('.uk-form').find('input').addClass("error-border");
+    //         }else{
+    //             $(this).closest('.uk-form').find('input').removeClass("error-border");
+    //             var input = $(this);
+    //             $.post(
+    //                 '/ajax',
+    //                 {'action': 'fast_order', 'phone' : phone, 'qwert' : 'qwert'},
+    //                 function(data){
+    //                     var modal = UIkit.modal("#modal-we-calling");
+    //                     modal.show();
+    //                     $(input).removeClass('uk-active');
+    //                 }
+    //             );
+    //         }
+    //     }else{
+    //         $(this).addClass('uk-active');
+    //         $(this).closest('.uk-form').find('input').focus();
+    //         $(this).attr('data-live', i++);
+    //     }
+    // });
+    // $('.yellow-question-block .uk-form .uk-button').on("click", function(event) {
+    //     event.preventDefault();
+    //
+    //     var phone = $(this).closest('.uk-form').find('input').val();
+    //
+    //     if(!phone){
+    //         $(this).closest('.uk-form').find('input').addClass("error-border");
+    //     }else{
+    //         $(this).closest('.uk-form').find('input').removeClass("error-border");
+    //         var input = $(this);
+    //         $.post(
+    //             '/ajax',
+    //             {'action': 'fast_order', 'phone' : phone, 'qwert' : 'qwert'},
+    //             function(data){
+    //                 var modal = UIkit.modal("#modal-we-calling");
+    //                 modal.show();
+    //                 $(input).removeClass('uk-active');
+    //             }
+    //         );
+    //     }
+    // });
     //}
     /*
     if ($('.consultating-block .uk-form .uk-button').attr('data-live') > 1) {

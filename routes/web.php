@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\PostController;
@@ -44,7 +45,7 @@ Route::prefix('my_admin')->middleware('auth')->group(function () {
         'services' =>App\Http\Controllers\Admin\ServiceController::class,
 
 
-//        'contact_us' => ContactAdminController::class,
+        'contact_us' => ContactController::class,
 //        'subscribe' => SubscribetAdminController::class,
     ]);
     Route::get('slider-filter-category',[PostController::class,'slayder']);
@@ -60,11 +61,12 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'lang', 'as'=> 'site'], fu
 
     Route::get('/', [HomeController::class,'index']);
     Route::get('/service/{id?}', [ServiceController::class,'index']);
+    Route::get('/contact', [HomeController::class,'contact']);
+    Route::post('/add-number', [HomeController::class,'contactAdd'])->name('add-number');
 
 
     Route::get('/blog', [HomeController::class,'blog']);
     Route::get('/blog_single', [HomeController::class,'blog_single']);
-    Route::get('/contact', [HomeController::class,'contact']);
     Route::get('/sport', [HomeController::class,'sport']);
     Route::get('/author', [HomeController::class,'author']);
     Route::get('/gallery', [HomeController::class,'gallery']);

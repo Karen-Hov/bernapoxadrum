@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"  initial-scale = 2.3, user-scalable = no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>GoodNews</title>
+    <title>Bernapoxadrum</title>
 {{--    <link rel="shortcut icon" href="{{asset('site/img/itlogo.png')}}" type="image/x-icon">--}}
     @include('layouts.SiteLayouts.styles')
     @yield('styles')
@@ -13,7 +13,7 @@
 {{--    <link rel="stylesheet" href="{{asset('site/css/media.css')}}">--}}
 {{--    <script src="{{asset('site/js/jquery-3.2.1.js')}}"></script>--}}
     <meta charset="utf-8">
-    <title>365 Days Responsive HTML Template</title>
+    <title>Bernapoxadrum</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="New Express">
     <meta name="keywords" content="New Express">
