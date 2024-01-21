@@ -32,7 +32,14 @@ class HomeController extends Controller
     }
 
     public function contact(){
-        return view('front.contact');
+        $menus  = Menu::with(['translate'=>function ($q) {
+            $q->where('code',app()->getLocale())->where('type','menu');
+        },'submenu.translate'=>function ($s) {
+            $s->where('code',app()->getLocale())->where('type','submenu');
+        }]) ->get();
+        return view('front.contact')->with([
+            'menus'=>$menus
+        ]);;
     }
 
      public function contactAdd(PostCreateNumber $request){

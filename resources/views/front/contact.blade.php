@@ -22,8 +22,8 @@
 
                 <ul class="contact-list">
                     <li>@lang('variable.text_19')</li>
-                    <li>с 8:00 до 21:00 — прием заказов</li>
-                    <li>с 10:00 до 18:00 — бухгалтерия</li>
+                    <li>@lang('variable.text_23')</li>
+{{--                    <li>с 10:00 до 18:00 — бухгалтерия</li>--}}
                 </ul>
                 <p class="contact-email">
                     <a href="mailto:kem@gruzchikov-service.ru">xukas@xukas.am</a>

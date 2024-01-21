@@ -156,7 +156,7 @@
                         <h4>@lang('variable.text_13')</h4>
                         <p class="small-width">@lang('variable.text_14')</p>
                         <div class="panel-phone-contact">
-                            <p>с 8:00 до 21:00, пн - пт</p>
+                            <p>@lang('variable.text_23')</p>
                             <p class="phone-contact"><a href="tel:+37455626212">+374 (55) 62-62-12</a></p>
                         </div>
 {{--                        <form action="" class="uk-form">--}}

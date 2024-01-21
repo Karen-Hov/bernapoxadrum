@@ -10,66 +10,11 @@
             <img src="{{asset('front/images/header/loader.gif')}}" id="preloader_image" alt="loader">
         </div>
     </div>
-    <div class="ne_top_header_main_wrapper">
+    <div class="ne_top_header_main_wrapper" style="display: none">
         <div class="container">
             <div class="ne_left_sec_main_wrapper">
                 <div id="day_and_time">
                     <p id="date"></p>
-                </div>
-                <div class="ne_top_about_btn hidden-xs"> <a href="{{asset(app()->getLocale().'/contact')}}">@lang('menu.contact_us')</a></div>
-            </div>
-            <div class="ne_right_sec_main_wrapper">
-                <ul>
-{{--                    <li class="hidden-xs"><a href="#">Subscribe</a>--}}
-{{--                    </li>--}}
-                    <li class="hidden-xs"><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="hidden-xs"><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="hidden-xs"><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    </li>
-{{--                    <li class="hidden-xs"><a href="login.html">login &nbsp;<i class="fa fa-user"></i></a></li>--}}
-                    <li class="hidden-xs">
-
-                                <div class="lang">
-                                    <?php $i = 0;  ?>
-                                    @foreach(config('lang') as $key=>$item)
-                                        @if($item['code'] != app()->getLocale())
-                                            <?php $i++;  ?>
-                                            <a href="{{Route("switchLang",$item['code'])}}"  class="montserat">
-                                                {{$item['nam']}} @if($i == 1) / @endif
-                                            </a>
-                                        @endif
-                                    @endforeach
-                                </div>
-
-                    </li>
-                    <li><a href="#" class="second-nav-toggler mee">menu &nbsp;<i class="flaticon-text"></i></a>
-                    </li>
-                </ul>
-                <div id="mobile-nav" data-prevent-default="true" data-mouse-events="true">
-                    <div class="mobail_nav_overlay"></div>
-                    <div class="mobile-nav-box">
-                        <div class="mobile-logo">
-                            <a href="index.html" class="mobile-main-logo">
-                                <img src="{{asset('front/images/header/logo4.png')}}" alt="logo" class="img-responsiv">
-                            </a> <a href="#" class="manu-close"><i class="fa fa-times"></i></a>
-                        </div>
-                        <ul class="mobile-list-nav">
-{{--                            <li><a href="#">WORLD NEWS</a></li>--}}
-                            <?php $i = 0;  ?>
-                            @foreach(config('lang') as $key=>$item)
-                                @if($item['code'] != app()->getLocale())
-                                    <?php $i++;  ?>
-{{--                                    <a href="{{Route("switchLang",$item['code'])}}"  class="montserat">--}}
-{{--                                        {{$item['nam']}} @if($i == 1) / @endif--}}
-{{--                                    </a>--}}
-                                        <li><a href="#"> {{$item['nam']}} @if($i == 1) / @endif</a></li>
-                                @endif
-                            @endforeach
-
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -114,23 +59,6 @@
                                 <li class="parent megamenu"><a href="{{asset(app()->getLocale())}}#about_us" class="effect_nav">@lang('menu.about_us')</a></li>
                                 <li class="parent"><a href="{{asset(app()->getLocale().'/service')}}" class="effect_nav">@lang('menu.price')</a>
                                     <ul class="lg-submenu">
-{{--                                        <li class="parent"><a href="#">Գները</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/service')}}">Գները</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/service')}}">Գները</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                        <li class="parent"><a href="#">Գները</a>--}}
-{{--                                            <ul class="lg-submenu">--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/service')}}">Գները</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li><a href="{{asset(app()->getLocale().'/service')}}">Գները</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-
 
                                         @if(isset($menus) && $menus)
                                             @foreach($menus as $menu)
@@ -141,7 +69,19 @@
                                         @endif
                                     </ul>
                                 </li>
-                                <li class="parent"><a href="{{asset(app()->getLocale().'/contact')}}" class="effect_nav">@lang('menu.contact_us')</a>
+                                <li class="parent"><a href="{{asset(app()->getLocale().'/contact')}}" class="effect_nav">@lang('menu.contact_us')</a></li>
+                                <?php $i = 0;  ?>
+                                <li class="parent lang">
+                                @foreach(config('lang') as $key=>$item)
+                                    @if($item['code'] != app()->getLocale())
+                                        <?php $i++;  ?>
+
+                                        <a href="{{Route("switchLang",$item['code'])}}"  class="montserat">
+                                            {{$item['nam']}} @if($i == 1) / @endif
+                                        </a>
+
+                                    @endif
+                                @endforeach
                                 </li>
                             </ul>
                         </div>

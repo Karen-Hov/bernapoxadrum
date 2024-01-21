@@ -28,6 +28,8 @@ For additional convenience, you can use other services of various profiles. From
     'text_20' => 'Have questions?',
     'text_21' => 'Leave your phone number, we will call you back',
     'text_22' => 'Register',
+    'text_23' => 'from 8:00 to 21:00, Mon - Sun',
+
 
 
     'create_number' => 'Your phone number has been successfully registered.',

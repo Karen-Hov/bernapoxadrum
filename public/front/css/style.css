@@ -52,6 +52,12 @@ a:hover, a:focus {
 	text-decoration: none;
 	outline: none;
 }
+.lang>a{
+    display: inline-block!important;
+    /*padding: 10px 0 10px 15px!important;*/
+
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.1;
@@ -448,7 +454,9 @@ body.active #mobile-nav {
 .prs_navigation_main_wrapper{
 	float:left;
 	width:100%;
-	background:#33cc99;
+	background:#424141;
+    position: fixed;
+    z-index: 99999;
 }
 .menu_fixed{
 	position:fixed;
@@ -3441,7 +3449,7 @@ width:100%;
 }
 .ne_footer_second_section{
 	float:left;
-	width:100%;
+	width:120%;
 	padding-top:60px;
 }
 .ne_boto_testi_img_cont li{
@@ -3496,7 +3504,7 @@ width:100%;
 .ns_footer_rp_main_wrapper{
 	float:left;
 	width:100%;
-	margin-top: 60px;
+	/*margin-top: 60px;*/
 }
 .ns_footer_rp_img_wrapper{
 	float:left;

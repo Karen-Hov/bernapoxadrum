@@ -77,125 +77,6 @@
         </div>
     </div>
 </div>
-<div class="block-recheck-worker">
-    <div class="uk-container uk-container-center">
-        <h3 class="uk-text-center title-header">
-            Проверенные на 100% исполнители
-        </h3>
-        <p class="uk-text-center uk-hidden-small">Мы тщательно проверяем наших работников, поэтому у нас не бывает
-            случайных людей.</p>
-        <ul class="list-recheck uk-vertical-align-middle uk-margin-large-left uk-visible-small">
-            <li>Граждане РФ</li>
-            <li>Трезвые</li>
-            <li>Без нецензурной лексики</li>
-            <li>Без опозданий</li>
-            <li>Низкие цены</li>
-            <li>Без судимостей</li>
-        </ul>
-        <ul class="uk-grid uk-grid-width-1-3 uk-grid-width-large-1-3 uk-grid-width-xlarge-1-4 uk-margin-large-top uk-hidden-small"
-            data-uk-grid-margin="">
-            <li class="uk-row-first">
-                <div class="panel-recheck">
-                    <img src="{{asset('front/images/recheck_worker_01.jpg')}}" alt="">
-                    <div class="desck-block-recheck uk-text-cetner">
-                        <p class="name-recheck">Николай</p>
-                        <p class="age-recheck">33 лет, грузчик</p>
-                        <p class="rating-recheck">
-                            <i class="uk-icon-star"></i> 4.7
-                            <span>236 оценок</span>
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="panel-recheck">
-                    <img src="{{asset('front/images/recheck_worker_02.jpg')}}" alt="">
-                    <div class="desck-block-recheck uk-text-cetner">
-                        <p class="name-recheck">Вячеслав</p>
-                        <p class="age-recheck">29 лет, грузчик</p>
-                        <p class="rating-recheck">
-                            <i class="uk-icon-star icon-green"></i> 5.0
-                            <span>189 оценок</span>
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="uk-height-1-1 uk-vertical-align">
-                    <ul class="list-recheck uk-vertical-align-middle">
-                        <li>Граждане РФ</li>
-                        <li>Трезвые</li>
-                        <li>Без нецензурной лексики</li>
-                        <li>Без опозданий</li>
-                        <li>Низкие цены</li>
-                        <li>Без судимостей</li>
-                    </ul>
-                </div>
-            </li>
-            <li class="uk-visible-xlarge">
-                <div class="panel-recheck">
-                    <img src="{{asset('front/images/recheck_worker_03.jpg')}}" alt="">
-                    <div class="desck-block-recheck uk-text-cetner">
-                        <p class="name-recheck">Семён</p>
-                        <p class="age-recheck">29 лет, грузчик</p>
-                        <p class="rating-recheck">
-                            <i class="uk-icon-star"></i> 4.9
-                            <span>301 оценок</span>
-                        </p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div data-uk-slideset="{small: 1, medium: 3, large: 3, xlarge: 4}" class="uk-margin-large-top uk-visible-small">
-            <div class="uk-slidenav-position uk-margin">
-                <ul class="uk-slideset uk-grid uk-flex-center uk-grid-width-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3 uk-grid-width-xlarge-1-4 uk-grid-width-small-1-1">
-                    <li class="uk-active" style="">
-                        <div class="panel-recheck">
-                            <img src="images/recheck_worker_01.jpg" alt="">
-                            <div class="desck-block-recheck uk-text-cetner">
-                                <p class="name-recheck">Николай</p>
-                                <p class="age-recheck">29 лет, грузчик</p>
-                                <p class="rating-recheck">
-                                    <i class="uk-icon-star"></i> 4.7
-                                    <span>236 оценок</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="uk-active" style="">
-                        <div class="panel-recheck">
-                            <img src="images/recheck_worker_02.jpg" alt="">
-                            <div class="desck-block-recheck uk-text-cetner">
-                                <p class="name-recheck">Вячеслав</p>
-                                <p class="age-recheck">29 лет, грузчик</p>
-                                <p class="rating-recheck">
-                                    <i class="uk-icon-star icon-green"></i> 5.0
-                                    <span>189 оценок</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="uk-active" style="">
-                        <div class="panel-recheck">
-                            <img src="images/recheck_worker_03.jpg" alt="">
-                            <div class="desck-block-recheck uk-text-cetner">
-                                <p class="name-recheck">Семён</p>
-                                <p class="age-recheck">29 лет, грузчик</p>
-                                <p class="rating-recheck">
-                                    <i class="uk-icon-star"></i> 4.9
-                                    <span>301 оценок</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <a href="" class="uk-slidenav uk-slidenav-previous uk-visible-small"
-                   data-uk-slideset-item="previous"></a>
-                <a href="" class="uk-slidenav uk-slidenav-next uk-visible-small" data-uk-slideset-item="next"></a>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- end main contend -->
 <div class="thanks-block">
     <div class="uk-container uk-container-center">
@@ -261,7 +142,7 @@
                     <h4>@lang('variable.text_13')</h4>
                     <p>@lang('variable.text_14')</p>
                     <div class="panel-phone-contact">
-                        <p>с 8:00 до 21:00, пн - пт</p>
+                        <p>@lang('variable.text_23')</p>
                         <p class="phone-contact"><a href="tel:+37455626212">+374 (55) 62-62-12</a></p>
                     </div>
 {{--                    <form action="" class="uk-form">--}}
@@ -281,63 +162,12 @@
 
 
 <!-- jQuery -->
-<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script type="text/javascript" async=""
-        src="https://www.googletagmanager.com/gtag/js?id=G-SJ2JHHPNYQ&amp;l=dataLayer&amp;cx=c"></script>
-<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
-{{--<script src="js/jquery-1.12.4.min.js"></script>--}}
-{{--<!-- Uikit -->--}}
-{{--<script src="js/uikit.min.js"></script>--}}
-{{--<script src="js/sticky.min.js"></script>--}}
-{{--<script src="js/lightbox.min.js"></script>--}}
-{{--<script src="js/slideshow.min.js"></script>--}}
-{{--<script src="js/slideset.min.js"></script>--}}
-{{--<script src="js/accordion.min.js"></script>--}}
-{{--<!-- Plugins -->--}}
-{{--<script src="js/jquery.inputmask.bundle.min.js?v=2"></script>--}}
-{{--<script src="js/jquery.formstyler.min.js"></script>--}}
-{{--<script src="js/jquery.mmenu.all.js"></script>--}}
-{{--<script src="js/jquery.matchHeight.js"></script>--}}
-<!-- Main -->
+
 <script src="{{asset('front/js/main.js?v=1.1')}}"></script>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function () {
-            try {
-                w.yaCounter51269785 = new Ya.Metrika2({
-                    id: 51269785,
-                    clickmap: true,
-                    trackLinks: true,
-                    accurateTrackBounce: true,
-                    webvisor: true
-                });
-            } catch (e) {
-            }
-        });
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () {
-                n.parentNode.insertBefore(s, n);
-            };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-            f();
-        }
-    })(document, window, "yandex_metrika_callbacks2");
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/51269785" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript>
 <!-- /Yandex.Metrika counter -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-173025696-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 

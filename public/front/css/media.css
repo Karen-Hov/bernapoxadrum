@@ -808,6 +808,14 @@
     .block-office-map {
         text-align: center;
     }
+    .yellow-question-block{
+        margin-top: 236px;
+    }
+    .lang>a{
+        display: inline-block!important;
+        padding: 10px 0 10px 15px!important;
+
+    }
     .yellow-question-block .title-header {
         font-size: 36px;
     }
